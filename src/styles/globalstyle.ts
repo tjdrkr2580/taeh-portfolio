@@ -9,5 +9,6 @@ export const globalStyle = css`
     text-decoration: none;
     list-style: none;
     border: none;
+    font-family: Pretendard;
   }
 `;
