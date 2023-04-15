@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { layoutType } from "@/types/public";
 import { Global } from "@emotion/react";
 import { globalStyle } from "@/styles/globalstyle";
-import Header from "@/components/Header";
+import Header from "@/components/global/Header";
 
 const AppLayout = ({ children }: layoutType) => {
   return (
