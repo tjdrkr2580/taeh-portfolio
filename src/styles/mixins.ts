@@ -9,7 +9,7 @@ export const logoStyle = css`
 `;
 
 export const pageMarginStyle = css`
-  padding: 28rem 0 14rem 0;
+  padding: 15rem 0 14rem 0;
 `;
 
 export const flexCenterCenter = css`

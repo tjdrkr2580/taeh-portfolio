@@ -22,6 +22,4 @@ export default function Home() {
   );
 }
 
-export const HomeWrapper = styled.section`
-  ${pageMarginStyle};
-`;
+export const HomeWrapper = styled.section``;
