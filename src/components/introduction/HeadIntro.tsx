@@ -20,7 +20,6 @@ const HeadIntro = () => {
 const HeadInfoWrapper = styled.section`
   display: flex;
   align-items: center;
-
   svg {
     width: 12.5rem;
     overflow: visible;
