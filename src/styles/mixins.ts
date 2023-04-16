@@ -11,3 +11,9 @@ export const logoStyle = css`
 export const pageMarginStyle = css`
   padding-top: 15rem;
 `;
+
+export const flexCenterCenter = css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

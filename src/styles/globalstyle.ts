@@ -11,4 +11,20 @@ export const globalStyle = css`
     border: none;
     font-family: Pretendard;
   }
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
+
+  input {
+    padding-left: 0.6rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  svg {
+    fill: transparent;
+  }
 `;

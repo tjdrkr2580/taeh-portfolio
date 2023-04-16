@@ -1,10 +1,10 @@
 import { keyframes } from "@emotion/react";
 
 export const logoFillAnimation = keyframes`
-from {
+0% {
         fill: transparent;
     }
-    to {
+    100% {    
         fill: #d9d9d9;
     }
 `;
