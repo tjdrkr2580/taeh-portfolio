@@ -4,6 +4,7 @@ import { layoutType } from "@/types/public";
 import { Global } from "@emotion/react";
 import { globalStyle } from "@/styles/globalstyle";
 import Header from "@/components/global/Header";
+import { flexCenterCenter } from "@/styles/mixins";
 
 const AppLayout = ({ children }: layoutType) => {
   return (

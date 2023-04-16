@@ -1,6 +1,6 @@
 import HeadInfo from "@/components/global/HeadInfo";
 import HeadIntro from "@/components/introduction/HeadIntro";
-import { pageMarginStyle } from "@/styles/mixins";
+import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -22,4 +22,6 @@ export default function Home() {
   );
 }
 
-export const HomeWrapper = styled.section``;
+export const HomeWrapper = styled.section`
+  ${flexCenterCenter}
+`;
