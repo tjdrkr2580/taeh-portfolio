@@ -8,6 +8,7 @@ const HeadInfo = ({ title, description }: headInfoType) => {
       <title>{title}</title>
       <meta name="author" content="taeh" />
       <meta name="description" content={description} />
+      <meta name="theme-color" content="#ffffff" />
     </Head>
   );
 };
