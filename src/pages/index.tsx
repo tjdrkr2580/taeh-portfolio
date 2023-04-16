@@ -1,7 +1,10 @@
+import { pageMarginStyle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 
 export default function Home() {
-  return <h1>ddd</h1>;
+  return <HomeWrapper>안녕</HomeWrapper>;
 }
 
-const HomeWrapper = styled.section``;
+export const HomeWrapper = styled.section`
+  ${pageMarginStyle};
+`;

@@ -7,3 +7,7 @@ export const logoStyle = css`
   font-family: "Mrs Saint Delafield", cursive;
   font-weight: 400;
 `;
+
+export const pageMarginStyle = css`
+  padding-top: 15rem;
+`;

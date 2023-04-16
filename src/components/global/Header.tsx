@@ -20,6 +20,7 @@ const Header = () => {
 };
 
 const HeaderWrapper = styled.section`
+  position: fixed;
   width: 100vw;
   height: 6rem;
   padding: 1rem 0;
