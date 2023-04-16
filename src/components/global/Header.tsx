@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Link from "next/link";
+import { logoStyle } from "@/styles/mixins";
 
 const Header = () => {
   return (
@@ -26,7 +27,7 @@ const HeaderWrapper = styled.section`
   align-items: center;
   justify-content: space-around;
   h1 {
-    font-size: 4rem;
+    ${logoStyle};
   }
 `;
 
