@@ -22,11 +22,12 @@ const Header = () => {
 const HeaderWrapper = styled.section`
   position: fixed;
   width: 100vw;
-  height: 6rem;
+  height: 7rem;
   padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  backdrop-filter: blur(0.4rem);
   h1 {
     ${logoStyle};
   }

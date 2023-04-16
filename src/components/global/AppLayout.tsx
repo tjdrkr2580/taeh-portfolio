@@ -16,8 +16,8 @@ const AppLayout = ({ children }: layoutType) => {
 };
 
 const TaehWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background: ${(props) => props.theme.backgroundColor};
   padding: 0 0.8rem;
   * {

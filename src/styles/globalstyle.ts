@@ -12,6 +12,10 @@ export const globalStyle = css`
     font-family: Pretendard;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   button {
     cursor: pointer;
     border: none;
