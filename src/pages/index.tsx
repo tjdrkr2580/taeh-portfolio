@@ -4,6 +4,7 @@ import { pageMarginStyle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import FirstInfo from "@/components/introduction/FirstInfo";
 
 export default function Home() {
   const [isView, setView] = useState(true);
@@ -15,6 +16,7 @@ export default function Home() {
       <HeadInfo />
       <HomeWrapper>
         <AnimatePresence>{isView === true && <HeadIntro />}</AnimatePresence>
+        <FirstInfo />
       </HomeWrapper>
     </>
   );
