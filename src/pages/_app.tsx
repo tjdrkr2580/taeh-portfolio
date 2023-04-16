@@ -3,7 +3,6 @@ import AppLayout from "../components/global/AppLayout";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "@/styles/theme";
 import "../assets/font/font.css";
-import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
