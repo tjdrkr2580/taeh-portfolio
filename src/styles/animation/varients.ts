@@ -22,13 +22,25 @@ export const introMotion: Variants = Object.freeze({
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.5, // 트랜지션의 지속 시간을 설정할 수 있습니다.
+      duration: 0.5,
     },
   },
 });
 
 export const firstInfoTextMotion: Variants = Object.freeze({
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 30 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: 30,
+    transition: {
+      duration: 0.6,
+    },
+  },
 });

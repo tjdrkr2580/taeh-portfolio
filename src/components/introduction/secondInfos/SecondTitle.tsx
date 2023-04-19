@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "../../../assets/img/logo.jpeg";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
+import { SiKakaotalk } from "react-icons/si";
 
 const SecondTitle = () => {
   return (
@@ -25,12 +26,12 @@ const SecondTitle = () => {
           010-9688-6780
         </li>
         <li>
-          <></>
+          <SiKakaotalk size={22} color="#ffdc00" />
           tjdrkr2580
         </li>
         <li>
-          <FaGithubSquare size={22} />
-          Taeh
+          <FaGithubSquare size={22} color="#433933" />
+          <a href="https://github.com/tjdrkr2580">Taeh</a>
         </li>
       </ul>
     </SecondTitleWrapper>
@@ -55,20 +56,17 @@ const SecondTitleWrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
     li {
       gap: 0.4rem;
-      font-size: 1.55rem;
+      font-size: 1.75rem;
       display: flex;
       align-items: center;
-      font-weight: 500;
-
-      &:last-child {
+      font-weight: 600;
+      a {
+        font-size: 1.75rem;
         cursor: pointer;
-
         &:hover {
           text-decoration: underline;
-          text-underline-position: under;
         }
       }
     }
