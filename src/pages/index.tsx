@@ -33,7 +33,15 @@ export const HomeWrapper = styled.section<homeWrapperPropsType>`
   @media (max-width: 1080px) {
     gap: 29rem;
   }
-  gap: 35rem;
+  @media (max-width : 780px) {
+    gap: 30rem;
+  }
+  @media (max-width : 1280px) {
+    gap: 35rem;
+  }
+  @media (min-width : 1281px) {
+    gap: 40rem;
+  }
   ${flexCenterCenter}
   ${(props) =>
     props.isView === true
