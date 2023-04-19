@@ -1,24 +1,11 @@
 import styled from "@emotion/styled";
-import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
-import useThrottledScrollY from "@/hook/useThrottledScrollY";
-
+import { flexCenterCenter } from "@/styles/mixins";
+import FadeInOutTexts from "./FadeInOutTexts";
 const FirstInfo = () => {
-  const dd = useThrottledScrollY();
-  console.log(dd);
-
   return (
     <FirstInforWrapper>
-      <motion.p>
-        새로운 기술을 탐색하는 <span className="primary">개발자</span>
-      </motion.p>
-      <motion.p>
-        새로운 만남을 기대하는 <span className="primary">개발자</span>
-      </motion.p>
-      <motion.p>
-        새로운 경험을 희망하는 <span className="primary">개발자</span>
-      </motion.p>
+      <FadeInOutTexts />
     </FirstInforWrapper>
   );
 };
@@ -27,16 +14,15 @@ const FirstInforWrapper = styled(motion.section)`
   width: 100%;
   max-width: 128rem;
   flex-direction: column;
-  gap: 17.5rem;
-  padding: 45rem 0 20rem 0;
-  p {
-    font-size: 4.1rem;
-    font-weight: 600;
-  }
+  gap: 8rem;
+  padding: 35rem 0 20rem 0;
   .primary {
-    font-size: 4.5rem;
+    font-size: 4.2vw;
     color: ${(props) => props.theme.strongColor};
     font-weight: 900;
+    @media (max-width: 650px) {
+      font-size: 2.8rem;
+    }
   }
   ${flexCenterCenter};
 `;

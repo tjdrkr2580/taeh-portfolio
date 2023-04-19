@@ -23,5 +23,6 @@ export default function Home() {
 }
 
 export const HomeWrapper = styled.section`
+  min-height: 150vh;
   ${flexCenterCenter}
 `;
