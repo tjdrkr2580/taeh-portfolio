@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import FirstInfo from "@/components/introduction/FirstInfo";
 import SecondInfo from "@/components/introduction/secondInfos/SecondInfo";
+import { homeWrapperPropsType } from "@/types/props";
+import { css } from "@emotion/react";
 
 export default function Home() {
   const [isView, setView] = useState(true);
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <>
       <HeadInfo />
-      <HomeWrapper>
+      <HomeWrapper isView={isView}>
         <AnimatePresence>{isView === true && <HeadIntro />}</AnimatePresence>
         <FirstInfo />
         <SecondInfo />
@@ -24,11 +26,22 @@ export default function Home() {
   );
 }
 
-export const HomeWrapper = styled.section`
-  min-height: 200vh;
+export const HomeWrapper = styled.section<homeWrapperPropsType>`
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 30rem;
+  @media (max-width: 1080px) {
+    gap: 29rem;
+  }
+  gap: 35rem;
   ${flexCenterCenter}
+  ${(props) =>
+    props.isView === true
+      ? css`
+          max-height: 20vh;
+        `
+      : css`
+          min-height: 200vh;
+        `}
+  overflow: hidden
 `;

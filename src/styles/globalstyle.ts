@@ -27,8 +27,4 @@ export const globalStyle = css`
       outline: none;
     }
   }
-
-  svg {
-    fill: transparent;
-  }
 `;

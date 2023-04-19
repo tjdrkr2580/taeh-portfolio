@@ -36,6 +36,7 @@ const HeadInfoWrapper = styled(motion.section)`
     margin-top: 5rem;
     width: 12.5rem;
     overflow: visible;
+    fill: transparent;
     text {
       ${logoStyle};
       font-size: 10.4rem;

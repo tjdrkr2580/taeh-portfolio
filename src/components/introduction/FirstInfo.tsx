@@ -15,7 +15,8 @@ const FirstInforWrapper = styled(motion.section)`
   max-width: 128rem;
   flex-direction: column;
   gap: 8rem;
-  padding: 20rem 0 20rem 0;
+  padding: 25rem 0 20rem 0;
+  min-height: 60rem;
   .primary {
     font-size: 4.2vw;
     color: ${(props) => props.theme.strongColor};

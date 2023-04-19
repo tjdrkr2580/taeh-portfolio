@@ -1,16 +1,20 @@
 import styled from "@emotion/styled";
-import React from "react";
+import SecondTitle from "./SecondTitle";
 
 const SecondInfo = () => {
-  return <SecondWrapper></SecondWrapper>;
+  return (
+    <SecondWrapper>
+      <SecondTitle />
+    </SecondWrapper>
+  );
 };
 
 const SecondWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  width: 100%;
-  max-width: 108rem;
+  width: 80%;
+  max-width: 96rem;
   height: 100vh;
 `;
 
