@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
 import Profile from "../../../assets/img/profile.webp";
+import { Line } from "@/styles/mixins";
 
 const SecondProfile = () => {
   return (

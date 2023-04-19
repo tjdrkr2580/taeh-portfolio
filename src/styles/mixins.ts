@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 
 export const logoStyle = css`
   cursor: pointer;
@@ -16,4 +17,10 @@ export const flexCenterCenter = css`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const Line = styled.div`
+  width: 100%;
+  height: 0.1rem;
+  background: ${(props) => props.theme.primaryColor};
 `;

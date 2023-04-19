@@ -6,6 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { SiKakaotalk } from "react-icons/si";
 import { BiPhoneCall } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
+import { Line } from "@/styles/mixins";
 
 const SecondTitle = () => {
   return (
@@ -42,6 +43,7 @@ const SecondTitle = () => {
           </a>
         </li>
       </ul>
+      <Line />
     </SecondTitleWrapper>
   );
 };
