@@ -72,7 +72,7 @@ const SecondTitleWrapper = styled.section`
       font-size: 1.75rem;
       display: flex;
       align-items: center;
-      font-weight: 600;
+      font-weight: 500;
       a {
         font-size: 1.75rem;
         cursor: pointer;
