@@ -4,6 +4,8 @@ import Logo from "../../../assets/img/logo.jpeg";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiKakaotalk } from "react-icons/si";
+import { BiPhoneCall } from "react-icons/bi";
+import { FiMail } from "react-icons/fi";
 
 const SecondTitle = () => {
   return (
@@ -18,20 +20,26 @@ const SecondTitle = () => {
       <h1>김태현 | Taeh</h1>
       <ul>
         <li>
-          <></>
+          <FiMail size={20} />
           tjdrkr2580@naver.com
         </li>
         <li>
-          <></>
+          <BiPhoneCall size={20} />
           010-9688-6780
         </li>
         <li>
-          <SiKakaotalk size={22} color="#ffdc00" />
+          <SiKakaotalk size={22} />
           tjdrkr2580
         </li>
         <li>
-          <FaGithubSquare size={22} color="#433933" />
-          <a href="https://github.com/tjdrkr2580">Taeh</a>
+          <FaGithubSquare size={24} />
+          <a
+            href="https://github.com/tjdrkr2580"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Taeh
+          </a>
         </li>
       </ul>
     </SecondTitleWrapper>
@@ -57,7 +65,10 @@ const SecondTitleWrapper = styled.section`
     flex-direction: column;
     gap: 0.8rem;
     li {
-      gap: 0.4rem;
+      svg {
+        width: 2rem;
+        margin-right: 0.8rem;
+      }
       font-size: 1.75rem;
       display: flex;
       align-items: center;
