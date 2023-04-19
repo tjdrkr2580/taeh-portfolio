@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import { flexCenterCenter } from "@/styles/mixins";
-import FadeInOutTexts from "./FadeInOutTexts";
+import FadeInOutTexts from "./firstInfos/FadeInOutTexts";
 const FirstInfo = () => {
   return (
     <FirstInforWrapper>

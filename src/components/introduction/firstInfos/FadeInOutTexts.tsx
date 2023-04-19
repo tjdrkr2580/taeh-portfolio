@@ -7,7 +7,7 @@ const FadeInOutTexts = () => {
   const throttleY = useThrottledScrollY();
   return (
     <AnimatePresence>
-      {throttleY >= 1 && throttleY <= 400 && (
+      {throttleY >= 1 && (
         <>
           <ScrollText
             variants={firstInfoTextMotion}
