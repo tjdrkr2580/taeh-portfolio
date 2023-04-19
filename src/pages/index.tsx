@@ -1,6 +1,6 @@
 import HeadInfo from "@/components/global/HeadInfo";
 import HeadIntro from "@/components/introduction/HeadIntro";
-import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
+import { flexCenterCenter } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
