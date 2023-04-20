@@ -7,6 +7,8 @@ import { SiKakaotalk } from "react-icons/si";
 import { BiPhoneCall } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
 import { Line } from "@/styles/mixins";
+import { path } from "@/constant/locationLink";
+import { LocationLink } from "../../../styles/mixins";
 
 const SecondTitle = () => {
   return (
@@ -34,13 +36,13 @@ const SecondTitle = () => {
         </li>
         <li>
           <FaGithubSquare size={24} />
-          <a
-            href="https://github.com/tjdrkr2580"
+          <LocationLink
+            href={path.github}
             target="_blank"
             rel="noopener noreferrer"
           >
             Taeh
-          </a>
+          </LocationLink>
         </li>
       </ul>
       <Line />
@@ -76,11 +78,7 @@ const SecondTitleWrapper = styled.section`
       align-items: center;
       font-weight: 500;
       a {
-        font-size: 1.75rem;
-        cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
+        font-size: 1.75rem !important;
       }
     }
   }

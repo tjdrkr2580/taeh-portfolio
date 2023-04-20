@@ -29,17 +29,18 @@ export default function Home() {
 export const HomeWrapper = styled.section<homeWrapperPropsType>`
   display: flex;
   width: 100%;
+  padding: 11rem 0;
   flex-direction: column;
   @media (max-width: 1080px) {
     gap: 29rem;
   }
-  @media (max-width : 780px) {
+  @media (max-width: 780px) {
     gap: 30rem;
   }
-  @media (max-width : 1280px) {
+  @media (max-width: 1280px) {
     gap: 35rem;
   }
-  @media (min-width : 1281px) {
+  @media (min-width: 1281px) {
     gap: 40rem;
   }
   ${flexCenterCenter}

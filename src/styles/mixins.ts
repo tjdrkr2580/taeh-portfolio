@@ -24,3 +24,9 @@ export const Line = styled.div`
   height: 0.1rem;
   background: ${(props) => props.theme.primaryColor};
 `;
+
+export const LocationLink = styled.a`
+  color: ${(props) => props.theme.primaryColor};
+  font-size: 2rem;
+  text-decoration: underline;
+`;
