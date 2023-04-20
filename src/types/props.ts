@@ -7,4 +7,5 @@ export interface listTitlePropsType {
   stack: string;
   href: boolean;
   link: string;
+  desc: string;
 }

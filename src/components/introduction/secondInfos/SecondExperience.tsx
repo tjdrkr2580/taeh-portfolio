@@ -20,7 +20,7 @@ const SecondExperience = () => {
       />
       <ListTitle
         title="항해99 12기 - 2023.01 ~ 2023.04"
-        stack="React 주특기 반"
+        stack="React, Redux, Recoil, React-Query..."
       />
     </SecondExperienceWrapper>
   );
