@@ -9,8 +9,8 @@ const SecondExperience = () => {
       <Line />
       <h1>이력</h1>
       <ListTitle
-        title="인천전자마이스터고등학교 사이버보안 기능반 - 2022.11 ~ 2022.03"
-        stack="컴퓨터 네트워크, JavaScript"
+        title="항해99 12기 - 2023.01 ~ 2023.04"
+        stack="React, Redux, Recoil, React-Query..."
       />
       <ListTitle
         title="eZar (주식회사 이자) - 2022.10 ~ 2023.02"
@@ -19,8 +19,8 @@ const SecondExperience = () => {
         link={path.ezar}
       />
       <ListTitle
-        title="항해99 12기 - 2023.01 ~ 2023.04"
-        stack="React, Redux, Recoil, React-Query..."
+        title="인천전자마이스터고등학교 사이버보안 기능반 - 2022.11 ~ 2022.03"
+        stack="Network, Linux, Packet Tracer, JavaScript"
       />
     </SecondExperienceWrapper>
   );
