@@ -17,12 +17,15 @@ export const introMotion: Variants = Object.freeze({
   initial: {
     opacity: 1,
     background: "#191919",
+    transition: {
+      duration: 0.25,
+    },
   },
   animate: {},
   exit: {
     opacity: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.25,
     },
   },
 });
