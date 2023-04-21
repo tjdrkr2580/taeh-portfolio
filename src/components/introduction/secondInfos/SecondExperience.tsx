@@ -1,13 +1,13 @@
 import ListTitle from "@/components/global/ListTitle";
 import { path } from "@/constant/locationLink";
-import { Line } from "@/styles/mixins";
+import { Line, StrongTitle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 
 const SecondExperience = () => {
   return (
     <SecondExperienceWrapper>
       <Line />
-      <h1>이력</h1>
+      <StrongTitle>이력</StrongTitle>
       <ListTitle
         title="항해99 12기 - 2023.01 ~ 2023.04"
         stack="React, Redux, Recoil, React-Query..."
@@ -31,10 +31,6 @@ const SecondExperienceWrapper = styled.section`
   flex-direction: column;
   gap: 4rem;
   width: 100%;
-  h1 {
-    font-size: 2.8rem;
-    color: ${(props) => props.theme.strongColor};
-  }
 `;
 
 export default SecondExperience;

@@ -30,3 +30,8 @@ export const LocationLink = styled.a`
   font-size: 2rem;
   text-decoration: underline;
 `;
+
+export const StrongTitle = styled.h1`
+  font-size: 2.8rem;
+  color: ${(props) => props.theme.strongColor};
+`;
