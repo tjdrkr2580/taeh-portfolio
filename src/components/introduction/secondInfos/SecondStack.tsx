@@ -9,6 +9,16 @@ import reduxImg from "@/assets/img/redux-icon.svg";
 import scssImg from "@/assets/img/scss.svg";
 import tsImg from "@/assets/img/typescript-icon.svg";
 import nextImg from "@/assets/img/nextjs.svg";
+import queryImg from "@/assets/img/react-query.svg";
+import prImg from "@/assets/img/prisma.svg";
+import nodeImg from "@/assets/img/node.svg";
+import mongoImg from "@/assets/img/mongodb.svg";
+import awsImg from "@/assets/img/aws.svg";
+import notionImg from "@/assets/img/notion.svg";
+import gitImg from "@/assets/img/git.svg";
+import jiraImg from "@/assets/img/jira.svg";
+import vscodeImg from "@/assets/img/vscode.svg";
+import slackImg from "@/assets/img/slack.svg";
 
 const SecondStack = () => {
   return (
@@ -16,8 +26,8 @@ const SecondStack = () => {
       <Line />
       <StrongTitle>스택</StrongTitle>
       <StackWrapper>
-        <ListTitle title="프론트엔드" isStack={false} />
-        <FrontEndImages>
+        <ListTitle title="프론트엔드 (주 스택)" isStack={false} />
+        <StackImages>
           <Image
             width={40}
             height={40}
@@ -56,23 +66,96 @@ const SecondStack = () => {
           <Image
             width={40}
             height={40}
+            alt="react-query"
+            src={queryImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
             alt="recoil"
+            className="notTransparent"
             src={recoilImg}
             placeholder="empty"
           />
-        </FrontEndImages>
+        </StackImages>
+        <p>주로 사용하는 기술 스택들입니다.</p>
       </StackWrapper>
       <StackWrapper>
-        <ListTitle title="백엔드" isStack={false} />
-        <FrontEndImages>
-          {/* <Image width={40} height={40} alt="react" src={reactImg} /> */}
-        </FrontEndImages>
+        <ListTitle title="백엔드 (서브 스택)" isStack={false} />
+        <StackImages>
+          <Image
+            width={40}
+            height={40}
+            alt="nodejs"
+            src={nodeImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="mongodb"
+            src={mongoImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="prisma"
+            src={prImg}
+            placeholder="empty"
+          />
+        </StackImages>
+        <p>토이 프로젝트를 개발할 때 경험했던 기술 스택입니다.</p>
       </StackWrapper>
-      <ListTitle
-        title="작업 도구"
-        isStack={false}
-        stack={"Notion, Slack, Jira"}
-      />
+      <StackWrapper>
+        <ListTitle title="백엔드 (서브 스택)" isStack={false} />
+        <StackImages>
+          <Image
+            width={40}
+            height={40}
+            alt="notion"
+            src={notionImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="jira"
+            src={jiraImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="git"
+            src={gitImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="aws"
+            src={awsImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="vscode"
+            src={vscodeImg}
+            placeholder="empty"
+          />
+          <Image
+            width={40}
+            height={40}
+            alt="slack"
+            src={slackImg}
+            placeholder="empty"
+          />
+        </StackImages>
+        <p>개발 및 협업을 하며 사용하는 도구입니다.</p>
+      </StackWrapper>
     </SecondStackWrapper>
   );
 };
@@ -87,20 +170,29 @@ const SecondStackWrapper = styled.section`
 const StackWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  p {
+    padding: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+  }
 `;
 
-const FrontEndImages = styled.section`
+const StackImages = styled.section`
   width: 100%;
   display: flex;
   gap: 1rem;
   align-items: center;
 
+  .notTransparent {
+    border-radius: 50%;
+    padding: 0.55rem;
+    background-color: white;
+  }
+
   img {
     cursor: pointer;
-    &:last-child {
-      border-radius: 50%;
-      padding: 0.55rem;
-      background-color: white;
+    transition: 0.25s transform;
+    &:hover {
+      transform: translateY(-1rem);
     }
   }
 `;
