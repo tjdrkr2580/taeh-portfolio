@@ -109,7 +109,7 @@ const SecondStack = () => {
         <p>토이 프로젝트를 개발할 때 경험했던 기술 스택입니다.</p>
       </StackWrapper>
       <StackWrapper>
-        <ListTitle title="백엔드 (서브 스택)" isStack={false} />
+        <ListTitle title="사용 도구" isStack={false} />
         <StackImages>
           <Image
             width={40}
