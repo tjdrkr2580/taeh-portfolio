@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import Logo from "../../../assets/img/logo.jpeg";
+import logo from "@/assets/img/logo.jpeg";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiKakaotalk } from "react-icons/si";
@@ -16,7 +16,7 @@ const SecondTitle = () => {
       <Image
         width={125}
         height={130}
-        src={Logo}
+        src={logo}
         alt="logo"
         placeholder="blur"
       />

@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
-import Profile from "../../../assets/img/profile.webp";
+import profile from "@/assets/img/profile.webp";
 
 const SecondProfile = () => {
   return (
     <SecondWrapper>
-      <Image src={Profile} width={300} height={400} alt="myProfile" />
+      <Image src={profile} width={300} height={400} alt="myProfile" />
       <SecondProfileTitle>
         <h1>
           훗날, 파도를 만들 개발자가 될 <span>김태현</span>
