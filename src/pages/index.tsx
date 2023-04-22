@@ -10,9 +10,15 @@ import { homeWrapperPropsType } from "@/types/props";
 import { css } from "@emotion/react";
 
 export default function Home() {
-  const [isView, setView] = useState(true);
+  const [isView, setView] = useState(false);
   useEffect(() => {
-    setTimeout(() => setView(false), 4000);
+    if (sessionStorage.getItem("taeh-first") === null) {
+      setView(true);
+      setTimeout(() => setView(false), 4000);
+      sessionStorage.setItem("taeh-first", "join");
+    } else {
+      return;
+    }
   }, []);
   return (
     <>
