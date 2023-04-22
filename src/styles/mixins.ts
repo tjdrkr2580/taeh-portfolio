@@ -35,3 +35,16 @@ export const StrongTitle = styled.h1`
   font-size: 2.8rem;
   color: ${(props) => props.theme.strongColor};
 `;
+
+export const ListWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+`;
+
+export const ErrorWrapper = styled.section`
+  height: 100vh;
+  ${flexCenterCenter};
+  font-size: 2.5rem;
+`;
