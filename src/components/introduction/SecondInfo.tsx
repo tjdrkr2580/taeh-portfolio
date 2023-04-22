@@ -24,6 +24,9 @@ const SecondWrapper = styled.section`
   flex-direction: column;
   gap: 5rem;
   width: 80%;
+  @media (max-width: 600px) {
+    width: 92.5%;
+  }
   max-width: 88rem;
 `;
 

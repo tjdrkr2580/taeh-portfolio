@@ -6,6 +6,9 @@ export const globalStyle = css`
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    @media (max-width: 600px) {
+      font-size: 7.5px;
+    }
     text-decoration: none;
     list-style: none;
     border: none;

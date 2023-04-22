@@ -6,13 +6,7 @@ import profile from "/public/profile.jpg";
 const SecondProfile = () => {
   return (
     <SecondWrapper>
-      <Image
-        src={profile}
-        width={300}
-        height={400}
-        alt="myProfile"
-        placeholder="empty"
-      />
+      <Image src={profile} alt="myProfile" placeholder="empty" />
       <SecondProfileTitle>
         <h1>
           훗날, 파도를 만들 개발자가 될 <span>김태현</span>
@@ -40,6 +34,15 @@ const SecondWrapper = styled.section`
   justify-content: space-around;
   align-items: center;
   gap: 4rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 30rem;
+    height: 40rem;
+  }
 `;
 
 const SecondProfileTitle = styled.div`
@@ -48,7 +51,7 @@ const SecondProfileTitle = styled.div`
   gap: 3rem;
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 700;
   }
 
@@ -66,6 +69,9 @@ const SecondDescription = styled.div`
   flex-direction: column;
   min-height: 100%;
   width: 80%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
   gap: 2rem;
   .subtitle {
     font-size: 2.4rem;
@@ -73,7 +79,7 @@ const SecondDescription = styled.div`
   }
 
   .description {
-    font-size: 1.8rem;
+    font-size: 1.3vw;
     line-height: 1.75;
   }
 `;
