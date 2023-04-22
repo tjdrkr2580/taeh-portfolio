@@ -20,7 +20,7 @@ const SecondStack = () => {
     <SecondStackWrapper>
       <Line />
       <StrongTitle>스택</StrongTitle>
-      {/* <StackWrapper>
+      <StackWrapper>
         <ListTitle title="프론트엔드 (주 스택)" isStack={false} />
         <StackImages>
           <Image
@@ -108,8 +108,8 @@ const SecondStack = () => {
             placeholder="empty"
           />
         </StackImages>
-        <p>토이 프로젝트를 개발할 때 경험했던 기술 스택입니다.</p>
-      </StackWrapper> */}
+        <p>간단한 프로젝트를 개발할 때 경험한 기술 스택입니다.</p>
+      </StackWrapper>
     </SecondStackWrapper>
   );
 };

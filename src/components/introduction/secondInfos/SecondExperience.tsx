@@ -15,8 +15,6 @@ const SecondExperience = () => {
       <ListTitle
         title="eZar (주식회사 이자) - 2022.10 ~ 2023.02"
         stack="React, SCSS, Angular, TypeScript"
-        href={true}
-        link={path.ezar}
       />
       <ListTitle
         title="인천전자마이스터고등학교 사이버보안 기능반 - 2022.11 ~ 2022.03"

@@ -7,8 +7,7 @@
 
 # Stack
 
-- node?
-- aws ci/cd [ec2로 할지 amplify로 할지는 고민중]
+- node
 - next
 - typescript
 - emotion
@@ -17,7 +16,7 @@
 # Challenge
 
 1. 폰트 재렌더링 되지 않게 파일로 받은 후, css에 넣고 app에 import
-2. AWS CI/CD 복습
+2. AWS CI/CD -> amplify를 사용하려했으나 이미지 오류로 인해 vercel로 전환
 3. NodeJS, MongoDB를 통한 간단한 방명록 개발
 4. 스타일링 고도화
 5. 이미지 압축 및, webp로 변환해서 렌더링 시간 최적화

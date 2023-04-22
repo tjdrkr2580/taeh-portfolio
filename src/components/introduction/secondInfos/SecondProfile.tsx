@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
-import profile from "../../../../public/profile.jpg";
+import profile from "/public/profile.jpg";
 
 const SecondProfile = () => {
   return (
@@ -24,9 +24,9 @@ const SecondProfile = () => {
             되기를 원합니다. 새로운 지식들을 환영하고, 이를 앞서 경험해보며
             고착되지 않으려고 합니다. 스타트업에서 프론트엔드 개발자로 약 5개월
             근무해보며 스타일링과 Real-Time, SPA 프레임워크 등 다양한 기술들을
-            접할 수 있었고, 재사용성을 생각하면서 보기 좋은 코드를 작성하려고
+            접할 수 있었고, 재사용성을 생각하면서도 보기 좋은 코드를 작성하려고
             합니다. 현재는 부트캠프에서 여러 프로젝트를 경험해봄으로써 어떤
-            조직에서도 본인의 역할을 수행하기 위해 최선을 다할 수 있습니다.
+            조직에서든지 본인의 역할을 수행하기 위해 최선을 다할 수 있습니다.
           </p>
         </SecondDescription>
       </SecondProfileTitle>
