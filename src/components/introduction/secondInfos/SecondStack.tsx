@@ -1,5 +1,5 @@
 import ListTitle from "@/components/global/ListTitle";
-import { Line, StrongTitle } from "@/styles/mixins";
+import { Line, ListWrapper, StrongTitle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
@@ -17,7 +17,7 @@ import awsImg from "@/assets/img/aws.svg";
 
 const SecondStack = () => {
   return (
-    <SecondStackWrapper>
+    <ListWrapper>
       <Line />
       <StrongTitle>스택</StrongTitle>
       <StackWrapper>
@@ -108,18 +108,11 @@ const SecondStack = () => {
             placeholder="empty"
           />
         </StackImages>
-        <p>토이 프로젝트를 개발할 때 경험했던 기술 스택입니다.</p>
+        <p>간단한 프로젝트를 개발할 때 경험한 기술 스택입니다.</p>
       </StackWrapper>
-    </SecondStackWrapper>
+    </ListWrapper>
   );
 };
-
-const SecondStackWrapper = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-`;
 
 const StackWrapper = styled.section`
   display: flex;

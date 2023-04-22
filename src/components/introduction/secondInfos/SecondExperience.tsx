@@ -1,11 +1,10 @@
 import ListTitle from "@/components/global/ListTitle";
-import { path } from "@/constant/locationLink";
-import { Line, StrongTitle } from "@/styles/mixins";
+import { Line, ListWrapper, StrongTitle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 
 const SecondExperience = () => {
   return (
-    <SecondExperienceWrapper>
+    <ListWrapper>
       <Line />
       <StrongTitle>이력</StrongTitle>
       <ListTitle
@@ -15,22 +14,13 @@ const SecondExperience = () => {
       <ListTitle
         title="eZar (주식회사 이자) - 2022.10 ~ 2023.02"
         stack="React, SCSS, Angular, TypeScript"
-        href={true}
-        link={path.ezar}
       />
       <ListTitle
         title="인천전자마이스터고등학교 사이버보안 기능반 - 2022.11 ~ 2022.03"
         stack="Network, Linux, Packet Tracer, JavaScript"
       />
-    </SecondExperienceWrapper>
+    </ListWrapper>
   );
 };
-
-const SecondExperienceWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 100%;
-`;
 
 export default SecondExperience;
