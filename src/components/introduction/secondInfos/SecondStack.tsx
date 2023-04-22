@@ -21,7 +21,7 @@ const SecondStack = () => {
       <Line />
       <StrongTitle>스택</StrongTitle>
       <StackWrapper>
-        <ListTitle title="주 스택" isStack={false} />
+        <ListTitle title="메인 스택" isStack={false} />
         <StackImages>
           <Image
             width={40}

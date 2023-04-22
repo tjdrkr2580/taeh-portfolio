@@ -9,6 +9,7 @@ import { FiMail } from "react-icons/fi";
 import { Line } from "@/styles/mixins";
 import { path } from "@/constant/locationLink";
 import { LocationLink } from "../../../styles/mixins";
+import { logoFlyAnimation } from "@/styles/animation/keyframe";
 
 const SecondTitle = () => {
   return (
@@ -18,6 +19,7 @@ const SecondTitle = () => {
         height={130}
         src={logo}
         alt="logo"
+        className="logo"
         placeholder="empty"
       />
       <h1>김태현 | Taeh</h1>
@@ -54,6 +56,9 @@ const SecondTitleWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  .logo {
+    animation: ${logoFlyAnimation} 5s ease-in-out infinite forwards;
+  }
   img {
     @media (max-width: 500px) {
       width: 9rem;
