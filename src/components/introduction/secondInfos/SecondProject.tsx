@@ -11,7 +11,7 @@ const SecondProject = () => {
       <StrongTitle>프로젝트</StrongTitle>
       <ListTitle
         title="Taeh - 2023.04.21 ~"
-        stack="Nest, TypeScript, Emotion, Node"
+        stack="Next, TypeScript, Emotion, Node"
         href={true}
         link={path.taeh}
       />

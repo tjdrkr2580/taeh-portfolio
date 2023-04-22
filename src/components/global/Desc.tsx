@@ -7,6 +7,7 @@ const Desc = ({ desc }: { desc: string }) => {
 
 const DescWrapper = styled.p`
   font-size: 1.7rem;
+  color: ${(props) => props.theme.primaryColor};
 `;
 
 export default Desc;

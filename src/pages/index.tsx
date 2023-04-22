@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import FirstInfo from "@/components/introduction/FirstInfo";
-import SecondInfo from "@/components/introduction/secondInfos/SecondInfo";
+import SecondInfo from "@/components/introduction/SecondInfo";
 import { homeWrapperPropsType } from "@/types/props";
 import { css } from "@emotion/react";
 

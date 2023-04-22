@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import SecondTitle from "./SecondTitle";
-import SecondProfile from "./SecondProfile";
-import SecondExperience from "./SecondExperience";
-import SecondStack from "./SecondStack";
-import SecondProject from "./SecondProject";
-import SecondStory from "./SecondStory";
+import SecondTitle from "./secondInfos/SecondTitle";
+import SecondProfile from "./secondInfos/SecondProfile";
+import SecondExperience from "./secondInfos/SecondExperience";
+import SecondStack from "./secondInfos/SecondStack";
+import SecondProject from "./secondInfos/SecondProject";
+import SecondStory from "./secondInfos/SecondStory";
 
 const SecondInfo = () => {
   return (
