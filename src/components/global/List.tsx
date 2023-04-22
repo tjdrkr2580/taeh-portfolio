@@ -24,6 +24,7 @@ const ListTitle = ({
           바로가기
         </LocationLink>
       )}
+      {desc !== "" && <></>}
     </ExperienceWrapper>
   );
 };
