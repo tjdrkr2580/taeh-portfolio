@@ -14,11 +14,6 @@ import prImg from "@/assets/img/prisma.svg";
 import nodeImg from "@/assets/img/node.svg";
 import mongoImg from "@/assets/img/mongodb.svg";
 import awsImg from "@/assets/img/aws.svg";
-import notionImg from "@/assets/img/notion.svg";
-import gitImg from "@/assets/img/git.svg";
-import jiraImg from "@/assets/img/jira.svg";
-import vscodeImg from "@/assets/img/vscode.svg";
-import slackImg from "@/assets/img/slack.svg";
 
 const SecondStack = () => {
   return (
@@ -78,6 +73,13 @@ const SecondStack = () => {
             src={recoilImg}
             placeholder="empty"
           />
+          <Image
+            width={40}
+            height={40}
+            alt="aws"
+            src={awsImg}
+            placeholder="empty"
+          />
         </StackImages>
         <p>주로 사용하는 기술 스택들입니다.</p>
       </StackWrapper>
@@ -107,54 +109,6 @@ const SecondStack = () => {
           />
         </StackImages>
         <p>토이 프로젝트를 개발할 때 경험했던 기술 스택입니다.</p>
-      </StackWrapper>
-      <StackWrapper>
-        <ListTitle title="사용 도구" isStack={false} />
-        <StackImages>
-          <Image
-            width={40}
-            height={40}
-            alt="notion"
-            src={notionImg}
-            placeholder="empty"
-          />
-          <Image
-            width={40}
-            height={40}
-            alt="jira"
-            src={jiraImg}
-            placeholder="empty"
-          />
-          <Image
-            width={40}
-            height={40}
-            alt="git"
-            src={gitImg}
-            placeholder="empty"
-          />
-          <Image
-            width={40}
-            height={40}
-            alt="aws"
-            src={awsImg}
-            placeholder="empty"
-          />
-          <Image
-            width={40}
-            height={40}
-            alt="vscode"
-            src={vscodeImg}
-            placeholder="empty"
-          />
-          <Image
-            width={40}
-            height={40}
-            alt="slack"
-            src={slackImg}
-            placeholder="empty"
-          />
-        </StackImages>
-        <p>개발 및 협업을 하며 사용하는 도구입니다.</p>
       </StackWrapper>
     </SecondStackWrapper>
   );

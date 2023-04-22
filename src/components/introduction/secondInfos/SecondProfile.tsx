@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
-import profile from "@/assets/img/profile.webp";
+import profile from "@/assets/img/profile.jpg";
 
 const SecondProfile = () => {
   return (
