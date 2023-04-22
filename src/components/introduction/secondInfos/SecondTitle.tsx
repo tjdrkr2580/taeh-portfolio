@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import logo from "@/assets/img/logo.jpeg";
+import logo from "@/assets/img/logo.jpg";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiKakaotalk } from "react-icons/si";
