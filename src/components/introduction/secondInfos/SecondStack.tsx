@@ -1,4 +1,4 @@
-import ListTitle from "@/components/global/ListTitle";
+import ListTitle from "@/components/global/List";
 import { Line, ListWrapper, StrongTitle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import Image from "next/image";
@@ -11,7 +11,7 @@ import tsImg from "@/assets/img/typescript-icon.svg";
 import nextImg from "@/assets/img/nextjs.svg";
 import queryImg from "@/assets/img/react-query.svg";
 import prImg from "@/assets/img/prisma.svg";
-import nodeImg from "@/assets/img/node.svg";
+import nestImg from "@/assets/img/nest.svg";
 import mongoImg from "@/assets/img/mongodb.svg";
 import awsImg from "@/assets/img/aws.svg";
 
@@ -21,7 +21,7 @@ const SecondStack = () => {
       <Line />
       <StrongTitle>스택</StrongTitle>
       <StackWrapper>
-        <ListTitle title="프론트엔드 (주 스택)" isStack={false} />
+        <ListTitle title="주 스택" isStack={false} />
         <StackImages>
           <Image
             width={40}
@@ -73,24 +73,17 @@ const SecondStack = () => {
             src={recoilImg}
             placeholder="empty"
           />
-          <Image
-            width={40}
-            height={40}
-            alt="aws"
-            src={awsImg}
-            placeholder="empty"
-          />
         </StackImages>
-        <p>주로 사용하는 기술 스택들입니다.</p>
+        <p>업무에서 사용 가능한 기술 스택입니다.</p>
       </StackWrapper>
       <StackWrapper>
-        <ListTitle title="백엔드 (서브 스택)" isStack={false} />
+        <ListTitle title="서브 스택" isStack={false} />
         <StackImages>
           <Image
             width={40}
             height={40}
-            alt="nodejs"
-            src={nodeImg}
+            alt="nestjs"
+            src={nestImg}
             placeholder="empty"
           />
           <Image
@@ -107,8 +100,15 @@ const SecondStack = () => {
             src={prImg}
             placeholder="empty"
           />
+          <Image
+            width={40}
+            height={40}
+            alt="aws"
+            src={awsImg}
+            placeholder="empty"
+          />
         </StackImages>
-        <p>간단한 프로젝트를 개발할 때 경험한 기술 스택입니다.</p>
+        <p>경험한 적이 있는 기술 스택입니다.</p>
       </StackWrapper>
     </ListWrapper>
   );

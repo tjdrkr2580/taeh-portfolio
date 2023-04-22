@@ -4,14 +4,16 @@ import { layoutType } from "@/types/public";
 import { Global } from "@emotion/react";
 import { globalStyle } from "@/styles/globalstyle";
 import Header from "@/components/global/Header";
-import { flexCenterCenter } from "@/styles/mixins";
+import { AnimatePresence } from "framer-motion";
+import Footer from "./Footer";
 
 const AppLayout = ({ children }: layoutType) => {
   return (
     <TaehWrapper>
       <Global styles={globalStyle} />
       <Header />
-      {children}
+      <AnimatePresence>{children}</AnimatePresence>
+      <Footer />
     </TaehWrapper>
   );
 };

@@ -3,14 +3,18 @@ import SecondTitle from "./SecondTitle";
 import SecondProfile from "./SecondProfile";
 import SecondExperience from "./SecondExperience";
 import SecondStack from "./SecondStack";
+import SecondProject from "./SecondProject";
+import SecondStory from "./SecondStory";
 
 const SecondInfo = () => {
   return (
     <SecondWrapper>
       <SecondTitle />
       <SecondProfile />
+      <SecondStory />
       <SecondStack />
       <SecondExperience />
+      <SecondProject />
     </SecondWrapper>
   );
 };
