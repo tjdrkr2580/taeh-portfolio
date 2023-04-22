@@ -6,7 +6,13 @@ import profile from "@/assets/img/profile.jpg";
 const SecondProfile = () => {
   return (
     <SecondWrapper>
-      <Image src={profile} width={300} height={400} alt="myProfile" />
+      <Image
+        src={profile}
+        width={300}
+        height={400}
+        alt="myProfile"
+        placeholder="empty"
+      />
       <SecondProfileTitle>
         <h1>
           훗날, 파도를 만들 개발자가 될 <span>김태현</span>
