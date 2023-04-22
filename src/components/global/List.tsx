@@ -1,6 +1,7 @@
 import { LocationLink } from "@/styles/mixins";
 import { listTitlePropsType } from "@/types/props";
 import styled from "@emotion/styled";
+import Desc from "./Desc";
 
 const ListTitle = ({
   title,
@@ -24,7 +25,7 @@ const ListTitle = ({
           바로가기
         </LocationLink>
       )}
-      {desc !== "" && <></>}
+      {desc !== "" && <Desc desc={desc} />}
     </ExperienceWrapper>
   );
 };
