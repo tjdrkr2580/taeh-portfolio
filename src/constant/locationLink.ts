@@ -4,6 +4,7 @@ export const path = Object.freeze({
   taeh: "https://taeh.shop",
   navis: "http://navis.kro.kr",
   airbnb: "https://airbnb-clone-pearl-three.vercel.app/",
+  richae: "https://richae.vercel.app/",
   vikingBand: "https://viking-band-fe.vercel.app/",
   github: "https://github.com/tjdrkr2580",
 });

@@ -20,12 +20,12 @@ const ListTitle = ({
           {stack}
         </span>
       </ExperienceTitle>
+      {desc !== "" && <Desc desc={desc} />}
       {href === true && (
         <LocationLink href={link} target="_blank" rel="noopener noreferrer">
           바로가기
         </LocationLink>
       )}
-      {desc !== "" && <Desc desc={desc} />}
     </ExperienceWrapper>
   );
 };

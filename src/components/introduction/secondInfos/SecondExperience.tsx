@@ -22,7 +22,7 @@ const SecondExperience = () => {
         title="사이버보안 기능반 - 2022.11 ~ 2022.03"
         isStack={false}
         stack="인천전자마이스터고등학교"
-        desc="기능경기대회 사이버보안 부문 출전"
+        desc="기능경기대회 사이버보안 부문 출전, 경희대 시스코 네트워킹 아카데미 경진대회 은상"
       />
     </ListWrapper>
   );
