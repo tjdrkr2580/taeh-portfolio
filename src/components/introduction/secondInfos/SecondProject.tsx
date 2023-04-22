@@ -10,6 +10,12 @@ const SecondProject = () => {
       <Line />
       <StrongTitle>프로젝트</StrongTitle>
       <ListTitle
+        title="Taeh - 2023.04.21 ~"
+        stack="Nest, TypeScript, Emotion, Node"
+        href={true}
+        link={path.taeh}
+      />
+      <ListTitle
         title="Navis - 2023.03 ~ 2023.04"
         stack="React, Recoil, React-Query, Styled-Component"
         href={true}
