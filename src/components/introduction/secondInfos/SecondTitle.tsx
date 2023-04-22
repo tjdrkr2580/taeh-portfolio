@@ -18,7 +18,7 @@ const SecondTitle = () => {
         height={130}
         src={logo}
         alt="logo"
-        placeholder="blur"
+        placeholder="empty"
       />
       <h1>김태현 | Taeh</h1>
       <ul>
