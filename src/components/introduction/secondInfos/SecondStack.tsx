@@ -74,7 +74,7 @@ const SecondStack = () => {
             placeholder="empty"
           />
         </StackImages>
-        <p>주로 사용하는 기술 스택입니다.</p>
+        <p>업무에서 사용 가능한 기술 스택입니다.</p>
       </StackWrapper>
       <StackWrapper>
         <ListTitle title="서브 스택" isStack={false} />

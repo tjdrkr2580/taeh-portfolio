@@ -5,6 +5,7 @@ import { Global } from "@emotion/react";
 import { globalStyle } from "@/styles/globalstyle";
 import Header from "@/components/global/Header";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./Footer";
 
 const AppLayout = ({ children }: layoutType) => {
   return (
@@ -12,6 +13,7 @@ const AppLayout = ({ children }: layoutType) => {
       <Global styles={globalStyle} />
       <Header />
       <AnimatePresence>{children}</AnimatePresence>
+      <Footer />
     </TaehWrapper>
   );
 };
