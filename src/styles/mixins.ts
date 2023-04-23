@@ -2,7 +2,6 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const logoStyle = css`
-  cursor: pointer;
   margin-top: 1rem;
   font-size: 4rem;
   font-family: "Mrs Saint Delafield", cursive;
@@ -34,6 +33,11 @@ export const LocationLink = styled.a`
 export const StrongTitle = styled.h1`
   font-size: 2.8rem;
   color: ${(props) => props.theme.strongColor};
+
+  .logo {
+    font-size: 3.9rem;
+    font-family: "Mrs Saint Delafield";
+  }
 `;
 
 export const ListWrapper = styled.section`
@@ -47,4 +51,12 @@ export const ErrorWrapper = styled.section`
   height: 100vh;
   ${flexCenterCenter};
   font-size: 2.5rem;
+`;
+
+export const ModalSection = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
 `;

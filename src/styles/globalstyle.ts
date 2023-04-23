@@ -13,17 +13,15 @@ export const globalStyle = css`
     list-style: none;
     border: none;
     font-family: Pretendard;
+    cursor: none;
   }
-
   body {
     overflow-x: hidden;
   }
-
   button {
     cursor: pointer;
     border: none;
   }
-
   input {
     padding-left: 0.6rem;
     &:focus {

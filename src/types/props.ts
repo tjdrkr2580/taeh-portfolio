@@ -9,4 +9,6 @@ export interface listTitlePropsType {
   href: boolean;
   link: string;
   desc: string;
+  lists: string[];
+  project: string;
 }

@@ -5,6 +5,7 @@ import SecondExperience from "./secondInfos/SecondExperience";
 import SecondStack from "./secondInfos/SecondStack";
 import SecondProject from "./secondInfos/SecondProject";
 import SecondStory from "./secondInfos/SecondStory";
+import SecondCert from "./secondInfos/SecondCert";
 
 const SecondInfo = () => {
   return (
@@ -15,6 +16,7 @@ const SecondInfo = () => {
       <SecondStack />
       <SecondExperience />
       <SecondProject />
+      <SecondCert />
     </SecondWrapper>
   );
 };
