@@ -33,6 +33,11 @@ export const LocationLink = styled.a`
 export const StrongTitle = styled.h1`
   font-size: 2.8rem;
   color: ${(props) => props.theme.strongColor};
+
+  .logo {
+    font-size: 3.9rem;
+    font-family: "Mrs Saint Delafield";
+  }
 `;
 
 export const ListWrapper = styled.section`

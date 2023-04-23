@@ -6,7 +6,9 @@ const SecondStory = () => {
   return (
     <ListWrapper>
       <Line />
-      <StrongTitle>Taeh ?</StrongTitle>
+      <StrongTitle>
+        <span className="logo">Taeh</span>
+      </StrongTitle>
     </ListWrapper>
   );
 };
