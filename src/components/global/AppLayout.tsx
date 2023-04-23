@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Cursor from "../etc/Cursor";
 import { isModalState } from "@/utils/store";
 import { useRecoilValue } from "recoil";
+import Modal from "./Modal";
 
 const AppLayout = ({ children }: layoutType) => {
   const [mouseLocation, setMouseLocation] = useState({
@@ -35,6 +36,7 @@ const AppLayout = ({ children }: layoutType) => {
     <TaehWrapper>
       <Global styles={globalStyle} />
       <Header />
+      <AnimatePresence>{isModal !== "" && <Modal />}</AnimatePresence>
       <AnimatePresence>{children}</AnimatePresence>
       <Cursor mouseLocation={mouseLocation} />
       <Footer />

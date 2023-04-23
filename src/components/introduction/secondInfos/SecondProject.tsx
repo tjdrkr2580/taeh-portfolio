@@ -13,6 +13,7 @@ const SecondProject = () => {
         href={true}
         link={path.taeh}
         desc="2023 Taeh 포트폴리오"
+        project="taeh"
       />
       <List
         title="Navis - 2023.03 ~ 2023.04"
@@ -20,6 +21,7 @@ const SecondProject = () => {
         href={true}
         link={path.navis}
         desc="마크다운을 통한 소규모 그룹 관리 플랫폼"
+        project="navis"
       />
       <List
         title="threebnb - 2023.03.03 ~ 09 (폐쇄)"
@@ -27,6 +29,7 @@ const SecondProject = () => {
         href={true}
         link={path.airbnb}
         desc="에어비앤비 클론 프로젝트"
+        project="air"
       />
       <List
         title="VikingBand - 2023.02.24 ~ 2023.03.02 (폐쇄)"
@@ -34,6 +37,7 @@ const SecondProject = () => {
         href={true}
         link={path.vikingBand}
         desc="스터디 그룹 플랫폼"
+        project="viking"
       />
       <List
         title="Richae - 2023.01.25 ~ 29"
@@ -41,6 +45,7 @@ const SecondProject = () => {
         desc="해외 etf 상위 100개 정보 확인 토이 프로젝트"
         href={true}
         link={path.richae}
+        project="richae"
       />
       <List
         title="국내상장 이자 - 2022.11 ~ 2023.01"
@@ -48,6 +53,7 @@ const SecondProject = () => {
         desc="실시간 국내 etf 데이터 프로젝트"
         href={true}
         link={path.ezar_kr}
+        project="ezark"
       />
       <List
         title="해외상장 이자 - 2022.10 ~ 2023.01"
@@ -55,6 +61,7 @@ const SecondProject = () => {
         desc="실시간 해외 etf 데이터 프로젝트"
         href={true}
         link={path.ezar_samsung}
+        project="ezars"
       />
     </ListWrapper>
   );
