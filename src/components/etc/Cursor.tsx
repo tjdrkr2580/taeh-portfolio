@@ -9,8 +9,8 @@ const Cursor = ({
   return (
     <CustomCursor
       animate={{
-        x: mouseLocation.x - 32,
-        y: mouseLocation.y - 32,
+        x: mouseLocation.x - 34.5,
+        y: mouseLocation.y - 35,
         transition: {
           duration: 0,
         },
@@ -23,8 +23,8 @@ const CustomCursor = styled(motion.div)`
   position: fixed;
   top: 0%;
   left: 0%;
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 7rem;
+  height: 7.15rem;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1000;
