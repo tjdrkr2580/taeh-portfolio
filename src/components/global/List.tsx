@@ -2,6 +2,7 @@ import { LocationLink } from "@/styles/mixins";
 import { listTitlePropsType } from "@/types/props";
 import styled from "@emotion/styled";
 import Desc from "./Desc";
+import ListUl from "./ListUl";
 
 const ListTitle = ({
   title,
@@ -10,11 +11,12 @@ const ListTitle = ({
   href,
   link,
   desc,
+  lists,
 }: listTitlePropsType) => {
   return (
     <ExperienceWrapper>
       <ExperienceTitle>
-        <h2>{title}</h2>
+        {title !== "" && <h2>{title}</h2>}
         <span>
           <span className="primary">{isStack === true ? "Stack :" : ""}</span>{" "}
           {stack}
@@ -26,6 +28,7 @@ const ListTitle = ({
           바로가기
         </LocationLink>
       )}
+      {lists && lists.length !== 0 && <ListUl lists={lists} />}
     </ExperienceWrapper>
   );
 };
@@ -37,6 +40,7 @@ ListTitle.defaultProps = {
   href: false,
   link: "",
   desc: "",
+  lists: [],
 };
 
 const ExperienceWrapper = styled.div`

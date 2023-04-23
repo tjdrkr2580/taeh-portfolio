@@ -4,8 +4,8 @@ import React from "react";
 const ListUl = ({ lists }: { lists: string[] }) => {
   return (
     <UlWrapper>
-      {lists.map((list) => (
-        <li>{list}</li>
+      {lists.map((list, i) => (
+        <li key={i}>{list}</li>
       ))}
     </UlWrapper>
   );

@@ -16,7 +16,7 @@ const SecondExperience = () => {
         title="eZar - 2022.10 ~ 2023.02"
         isStack={false}
         stack="프론트엔드 개발자 현장실습 및 인턴"
-        desc="스타일링 및 유지보수, 간단한 기능 개발"
+        desc="스타일링 및 유지보수, 기능 개발, 데이터 시각화"
       />
       <ListTitle
         title="사이버보안 기능반 - 2022.11 ~ 2022.03"
