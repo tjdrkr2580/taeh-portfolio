@@ -19,7 +19,7 @@ const FooterWrapper = styled.section`
   justify-content: center;
 
   .logo {
-    padding-left: 1.2rem;
+    padding: 0.7rem 0 0 1.2rem;
     font-size: 2.8rem;
     font-family: "Mrs Saint Delafield";
   }
