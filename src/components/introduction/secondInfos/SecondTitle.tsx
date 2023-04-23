@@ -24,6 +24,7 @@ const SecondTitle = () => {
       />
       <h1>김태현 | Taeh</h1>
       <ul>
+        <li>인천전자마이스터고등학교 정보통신과 졸업 (2023.01.)</li>
         <li>
           <FiMail size={20} />
           tjdrkr2580@naver.com
