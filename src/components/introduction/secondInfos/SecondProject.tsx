@@ -10,7 +10,7 @@ const SecondProject = () => {
       <Line />
       <StrongTitle>프로젝트</StrongTitle>
       <ListTitle
-        title="Taeh - 2023.04.21 ~"
+        title="Taeh - 2023.04.21 ~ 23"
         stack="Next, TypeScript, Emotion, Node"
         href={true}
         link={path.taeh}
@@ -24,7 +24,7 @@ const SecondProject = () => {
         desc="마크다운을 통한 소규모 그룹 관리 플랫폼"
       />
       <ListTitle
-        title="threebnb - 2023.03.03 ~ 2023.03.09 (폐쇄)"
+        title="threebnb - 2023.03.03 ~ 09 (폐쇄)"
         stack="React, Recoil, React-Query, Styled-component"
         href={true}
         link={path.airbnb}
@@ -38,7 +38,7 @@ const SecondProject = () => {
         desc="스터디 그룹 플랫폼"
       />
       <ListTitle
-        title="Richae - 2023.01.25 ~ 2023.01.29"
+        title="Richae - 2023.01.25 ~ 29"
         stack="React, Recoil, React-Query, Craco, HighCharts"
         desc="해외 etf 상위 100개 정보 확인 토이 프로젝트"
         href={true}

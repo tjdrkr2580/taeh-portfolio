@@ -7,12 +7,16 @@ import Header from "@/components/global/Header";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./Footer";
 import Cursor from "../etc/Cursor";
+import { isModalState } from "@/utils/store";
+import { RecoilRoot, useRecoilValue } from "recoil";
 
 const AppLayout = ({ children }: layoutType) => {
   const [mouseLocation, setMouseLocation] = useState({
     x: 0,
     y: 0,
   });
+
+  const isModal = useRecoilValue(isModalState);
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
