@@ -3,17 +3,17 @@ import { Line, ListWrapper, StrongTitle } from "@/styles/mixins";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import React from "react";
-import reactImg from "@/assets/img/react.svg";
-import recoilImg from "@/assets/img/recoil.svg";
-import reduxImg from "@/assets/img/redux-icon.svg";
-import scssImg from "@/assets/img/scss.svg";
-import tsImg from "@/assets/img/typescript-icon.svg";
-import nextImg from "@/assets/img/nextjs.svg";
-import queryImg from "@/assets/img/react-query.svg";
-import prImg from "@/assets/img/prisma.svg";
-import nestImg from "@/assets/img/nest.svg";
-import mongoImg from "@/assets/img/mongodb.svg";
-import awsImg from "@/assets/img/aws.svg";
+import reactImg from "@/assets/svgs/react.svg";
+import recoilImg from "@/assets/svgs/recoil.svg";
+import reduxImg from "@/assets/svgs/redux-icon.svg";
+import scssImg from "@/assets/svgs/scss.svg";
+import tsImg from "@/assets/svgs/typescript-icon.svg";
+import nextImg from "@/assets/svgs/nextjs.svg";
+import queryImg from "@/assets/svgs/react-query.svg";
+import prImg from "@/assets/svgs/prisma.svg";
+import nestImg from "@/assets/svgs/nest.svg";
+import mongoImg from "@/assets/svgs/mongodb.svg";
+import awsImg from "@/assets/svgs/aws.svg";
 
 const SecondStack = () => {
   return (

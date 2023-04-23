@@ -39,21 +39,21 @@ const SecondProject = () => {
       />
       <ListTitle
         title="Richae - 2023.01.25 ~ 2023.01.29"
-        stack="React, Recoil, React-Query, Craco"
+        stack="React, Recoil, React-Query, Craco, HighCharts"
         desc="해외 etf 상위 100개 정보 확인 페이지"
         href={true}
         link={path.richae}
       />
       <ListTitle
         title="국내상장 이자 - 2022.11 ~ 2023.01"
-        stack="React, TypeScript, SCSS, Tailwind"
+        stack="React, TypeScript, SCSS, Tailwind, HighCharts"
         desc="실시간 국내 etf 정보 확인 페이지"
         href={true}
         link={path.ezar_kr}
       />
       <ListTitle
         title="해외상장 이자 - 2022.10 ~ 2023.01"
-        stack="Angular, TypeScript, SCSS"
+        stack="Angular, TypeScript, SCSS, HighCharts"
         desc="실시간 해외 etf 정보 확인 페이지"
         href={true}
         link={path.ezar_samsung}
