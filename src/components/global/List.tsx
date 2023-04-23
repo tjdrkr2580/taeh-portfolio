@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Desc from "./Desc";
 import ListUl from "./ListUl";
 
-const ListTitle = ({
+const List = ({
   title,
   isStack,
   stack,
@@ -35,7 +35,7 @@ const ListTitle = ({
   );
 };
 
-ListTitle.defaultProps = {
+List.defaultProps = {
   title: "",
   isStack: true,
   stack: "",
@@ -69,4 +69,4 @@ const ExperienceTitle = styled.div`
   gap: 1.5rem;
 `;
 
-export default ListTitle;
+export default List;
