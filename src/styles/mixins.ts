@@ -2,7 +2,6 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const logoStyle = css`
-  cursor: pointer;
   margin-top: 1rem;
   font-size: 4rem;
   font-family: "Mrs Saint Delafield", cursive;
