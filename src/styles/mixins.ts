@@ -52,3 +52,11 @@ export const ErrorWrapper = styled.section`
   ${flexCenterCenter};
   font-size: 2.5rem;
 `;
+
+export const ModalSection = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+`;

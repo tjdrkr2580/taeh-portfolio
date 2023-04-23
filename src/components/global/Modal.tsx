@@ -1,11 +1,13 @@
 import { flexCenterCenter } from "@/styles/mixins";
 import { isModalState } from "@/utils/store";
 import styled from "@emotion/styled";
-import { ReactNode, useEffect, useRef } from "react";
-import { useResetRecoilState } from "recoil";
+import { useRef } from "react";
+import { useRecoilValue, useResetRecoilState } from "recoil";
+import Navis from "../introduction/projects/Navis";
 
-const Modal = ({ children }: { children: ReactNode }) => {
+const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
+  const modalState = useRecoilValue(isModalState);
   const modalRef = useRef<HTMLDivElement>(null);
   return (
     <ModalWrapper
@@ -16,7 +18,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
         }
       }}
     >
-      <ModalContent>{children}</ModalContent>
+      <ModalContent>{modalState === "navis" && <Navis />}</ModalContent>
     </ModalWrapper>
   );
 };
@@ -34,10 +36,10 @@ const ModalWrapper = styled.div`
 
 const ModalContent = styled.section`
   max-width: 65rem;
-  max-height: 80rem;
-  width: 80vw;
-  height: 80vh;
+  width: 85vw;
+  height: 40rem;
   border-radius: 8px;
+  padding: 2rem 0.8rem;
   background-color: ${(props) => props.theme.backgroundColor};
 `;
 

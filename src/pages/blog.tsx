@@ -4,7 +4,9 @@ import styled from "@emotion/styled";
 const blog = () => {
   return (
     <BlogWrapper>
-      <ErrorWrapper>현재 블로그는 개발 중에 있습니다, 감사합니다</ErrorWrapper>
+      <ErrorWrapper>
+        현재 마크다운 블로그는 개발 중에 있습니다, 감사합니다
+      </ErrorWrapper>
     </BlogWrapper>
   );
 };

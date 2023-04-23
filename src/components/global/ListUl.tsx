@@ -15,10 +15,11 @@ const UlWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  list-style: circle;
 
   li {
+    list-style: circle;
     font-size: 1.65rem;
+    line-height: 1.25;
   }
 `;
 
