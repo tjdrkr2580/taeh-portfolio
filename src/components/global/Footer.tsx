@@ -12,7 +12,7 @@ const Footer = () => {
 
 const FooterWrapper = styled.section`
   display: flex;
-  height: 8rem;
+  height: 7rem;
   width: 100vw;
   align-items: center;
   font-size: 1.75rem;

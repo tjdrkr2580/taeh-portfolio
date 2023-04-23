@@ -17,10 +17,12 @@ const ListTitle = ({
     <ExperienceWrapper>
       <ExperienceTitle>
         {title !== "" && <h2>{title}</h2>}
-        <span>
-          <span className="primary">{isStack === true ? "Stack :" : ""}</span>{" "}
-          {stack}
-        </span>
+        {stack !== "" && (
+          <span>
+            <span className="primary">{isStack === true ? "Stack :" : ""}</span>{" "}
+            {stack}
+          </span>
+        )}
       </ExperienceTitle>
       {desc !== "" && <Desc desc={desc} />}
       {href === true && (

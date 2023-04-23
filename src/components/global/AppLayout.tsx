@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "./Footer";
 import Cursor from "../etc/Cursor";
 import { isModalState } from "@/utils/store";
-import { RecoilRoot, useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
 
 const AppLayout = ({ children }: layoutType) => {
   const [mouseLocation, setMouseLocation] = useState({

@@ -19,6 +19,11 @@ const SecondExperience = () => {
         desc="스타일링 및 유지보수, 기능 개발, 데이터 시각화"
       />
       <ListTitle
+        title="마이스터 레벨업 웹 개발 교육반 - 2022.03 ~ 2023.05"
+        isStack={false}
+        stack="HTML, CSS, JavaScript, PHP 교육 수강"
+      />
+      <ListTitle
         title="사이버보안 기능반 - 2022.11 ~ 2022.03"
         isStack={false}
         stack="인천전자마이스터고등학교"
