@@ -56,6 +56,9 @@ const ExperienceWrapper = styled.div`
       color: ${(props) => props.theme.primaryColor};
     }
   }
+  a {
+    width: fit-content;
+  }
 `;
 
 const ExperienceTitle = styled.div`
