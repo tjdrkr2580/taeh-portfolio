@@ -1,20 +1,33 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const Cursor = () => {
-  return <CursorWrapper />;
+const Cursor = ({
+  mouseLocation,
+}: {
+  mouseLocation: { x: number; y: number };
+}) => {
+  return (
+    <CustomCursor
+      animate={{
+        x: mouseLocation.x - 32,
+        y: mouseLocation.y - 32,
+        transition: {
+          duration: 0,
+        },
+      }}
+    />
+  );
 };
 
-const CursorWrapper = styled.section`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 4rem;
-  height: 4rem;
-  background-color: transparent;
-  border: 0.1rem solid ${(props) => props.theme.strongColor};
+const CustomCursor = styled(motion.div)`
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
-  pointer-events: none;
   z-index: 1000;
+  border: 0.1rem solid yellow;
 `;
 
 export default Cursor;
