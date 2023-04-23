@@ -9,7 +9,7 @@ const SecondProject = () => {
       <StrongTitle>프로젝트</StrongTitle>
       <List
         title="Taeh - 2023.04.21 ~ 23"
-        stack="Next, TypeScript, Emotion, Node"
+        stack="Next, TypeScript, Emotion, Framer-motion"
         href={true}
         link={path.taeh}
         desc="2023 Taeh 포트폴리오"
