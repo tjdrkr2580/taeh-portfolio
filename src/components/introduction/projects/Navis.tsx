@@ -4,7 +4,7 @@ import ListUl from "@/components/global/ListUl";
 const Navis = () => {
   return (
     <ModalSection>
-      <StrongTitle>Navis - 상세 설명</StrongTitle>
+      <StrongTitle>Navis</StrongTitle>
       <ListUl
         lists={[
           "직관적인 로딩, 에러 핸들링을 위한 React-Query 채택",

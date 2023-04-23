@@ -4,6 +4,11 @@ import styled from "@emotion/styled";
 import { useRef } from "react";
 import { useRecoilValue, useResetRecoilState } from "recoil";
 import Navis from "../introduction/projects/Navis";
+import EzarK from "../introduction/projects/EzarK";
+import EzarS from "../introduction/projects/EzarS";
+import Viking from "../introduction/projects/Viking";
+import Taeh from "../introduction/projects/Taeh";
+import Richae from "../introduction/projects/Richae";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -18,7 +23,15 @@ const Modal = () => {
         }
       }}
     >
-      <ModalContent>{modalState === "navis" && <Navis />}</ModalContent>
+      <ModalContent>
+        {modalState === "taeh" && <Taeh />}
+        {modalState === "navis" && <Navis />}
+        {modalState === "air" && <></>}
+        {modalState === "viking" && <Viking />}
+        {modalState === "richae" && <Richae />}
+        {modalState === "ezars" && <EzarS />}
+        {modalState === "ezark" && <EzarK />}
+      </ModalContent>
     </ModalWrapper>
   );
 };
