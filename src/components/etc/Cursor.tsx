@@ -28,7 +28,8 @@ const CustomCursor = styled(motion.div)`
   border-radius: 50%;
   pointer-events: none;
   z-index: 1000;
-  border: 0.1rem solid yellow;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
 `;
 
 export default Cursor;
