@@ -136,7 +136,6 @@ const StackImages = styled.section`
   }
 
   img {
-    cursor: pointer;
     transition: 0.25s transform;
     &:hover {
       transform: translateY(-1rem);

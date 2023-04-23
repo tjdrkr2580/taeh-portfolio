@@ -20,12 +20,13 @@ const Cursor = ({
 };
 
 const CustomCursor = styled(motion.div)`
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
+  pointer-events: none;
   z-index: 1000;
   border: 0.1rem solid yellow;
 `;
