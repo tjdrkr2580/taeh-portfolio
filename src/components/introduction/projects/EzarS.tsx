@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const EzarS = () => {
   return (
     <ModalSection>
-      <StrongTitle>해외상장 이자</StrongTitle>
       <ListUl
         lists={[
           "Figma와 맞게 HighCharts 디자인 및 구성 변경 - 클라이언트 호평",

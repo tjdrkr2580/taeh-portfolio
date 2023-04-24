@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const Richae = () => {
   return (
     <ModalSection>
-      <StrongTitle>Richae</StrongTitle>
       <ListUl
         lists={[
           "데이터 구조화시켜 흥미를 유발 - HighCharts 채택",

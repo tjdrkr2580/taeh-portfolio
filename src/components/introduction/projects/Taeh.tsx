@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const Taeh = () => {
   return (
     <ModalSection>
-      <StrongTitle>Taeh</StrongTitle>
       <ListUl
         lists={[
           "렌더링 최적화를 위한 이미지 압축, 폰트 파일 사용",

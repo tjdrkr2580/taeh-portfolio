@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const Viking = () => {
   return (
     <ModalSection>
-      <StrongTitle>Viking Band</StrongTitle>
       <ListUl
         lists={[
           "Axios 모듈화를 통해 개발 시간 소모 감소",
