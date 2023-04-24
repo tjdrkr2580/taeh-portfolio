@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const EzarK = () => {
   return (
     <ModalSection>
-      <StrongTitle>국내상장 이자</StrongTitle>
       <ListUl
         lists={[
           "백엔드 API를 통한 데이터 시각화",

@@ -9,6 +9,7 @@ import EzarS from "../introduction/projects/EzarS";
 import Viking from "../introduction/projects/Viking";
 import Taeh from "../introduction/projects/Taeh";
 import Richae from "../introduction/projects/Richae";
+import Air from "../introduction/projects/Air";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -26,7 +27,7 @@ const Modal = () => {
       <ModalContent>
         {modalState === "taeh" && <Taeh />}
         {modalState === "navis" && <Navis />}
-        {modalState === "air" && <></>}
+        {modalState === "air" && <Air />}
         {modalState === "viking" && <Viking />}
         {modalState === "richae" && <Richae />}
         {modalState === "ezars" && <EzarS />}
@@ -50,7 +51,6 @@ const ModalWrapper = styled.div`
 const ModalContent = styled.section`
   max-width: 65rem;
   width: 85vw;
-  height: 40rem;
   border-radius: 8px;
   padding: 2rem 0.8rem;
   background-color: ${(props) => props.theme.backgroundColor};

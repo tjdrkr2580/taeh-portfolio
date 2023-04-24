@@ -4,7 +4,6 @@ import ListUl from "@/components/global/ListUl";
 const Air = () => {
   return (
     <ModalSection>
-      <StrongTitle>Threebnb</StrongTitle>
       <ListUl
         lists={[
           "UX를 위해 인피니티 스크롤 도입",
