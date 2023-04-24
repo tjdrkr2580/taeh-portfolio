@@ -13,7 +13,6 @@ const SecondProject = () => {
         href={true}
         link={path.taeh}
         desc="2023 Taeh 포트폴리오"
-        project="taeh"
       />
       <List
         title="Navis - 2023.03 ~ 2023.04"
@@ -37,7 +36,6 @@ const SecondProject = () => {
         href={true}
         link={path.vikingBand}
         desc="스터디 그룹 플랫폼"
-        project="viking"
       />
       <List
         title="Richae - 2023.01.25 ~ 29"

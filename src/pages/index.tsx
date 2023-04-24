@@ -25,7 +25,7 @@ export default function Home() {
       <HeadInfo />
       <HomeWrapper isView={isView}>
         <AnimatePresence>{isView === true && <HeadIntro />}</AnimatePresence>
-        <FirstInfo />
+        {/* <FirstInfo /> */}
         <SecondInfo />
       </HomeWrapper>
     </>

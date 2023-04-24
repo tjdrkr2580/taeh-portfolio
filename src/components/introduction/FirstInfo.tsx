@@ -8,7 +8,7 @@ import { logoFlyAnimation } from "../../styles/animation/keyframe";
 const FirstInfo = () => {
   return (
     <FirstInforWrapper>
-      <FadeInOutTexts />
+      {/* <FadeInOutTexts /> */}
       <BsFileArrowDown className="scroll" size={48} />
     </FirstInforWrapper>
   );

@@ -66,7 +66,7 @@ const ExperienceWrapper = styled.div`
     gap: 1rem;
   }
   h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   span {
     font-size: 2rem;
