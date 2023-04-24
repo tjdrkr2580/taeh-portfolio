@@ -26,3 +26,12 @@ export const logoFillAnimation = keyframes`
         fill: #d9d9d9;
     }
 `;
+
+export const modalBackGroundAnimation = keyframes`
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.3);
+    }
+`;

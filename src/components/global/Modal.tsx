@@ -10,6 +10,9 @@ import Viking from "../introduction/projects/Viking";
 import Taeh from "../introduction/projects/Taeh";
 import Richae from "../introduction/projects/Richae";
 import Air from "../introduction/projects/Air";
+import { modalBackGroundAnimation } from "@/styles/animation/keyframe";
+import { motion } from "framer-motion";
+import { modalVariants } from "@/styles/animation/varients";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -24,7 +27,12 @@ const Modal = () => {
         }
       }}
     >
-      <ModalContent>
+      <ModalContent
+        variants={modalVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
         {modalState === "taeh" && <Taeh />}
         {modalState === "navis" && <Navis />}
         {modalState === "air" && <Air />}
@@ -46,9 +54,10 @@ const ModalWrapper = styled.div`
   left: 0;
   z-index: 1001;
   background: rgba(0, 0, 0, 0.3);
+  animation: 0.25s ${modalBackGroundAnimation} forwards ease-in-out;
 `;
 
-const ModalContent = styled.section`
+const ModalContent = styled(motion.div)`
   max-width: 65rem;
   width: 85vw;
   border-radius: 8px;
