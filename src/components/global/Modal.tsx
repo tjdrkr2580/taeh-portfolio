@@ -61,7 +61,7 @@ const ModalContent = styled(motion.div)`
   max-width: 65rem;
   width: 85vw;
   border-radius: 8px;
-  padding: 2rem 0.8rem;
+  padding: 3rem 0.8rem;
   background-color: ${(props) => props.theme.backgroundColor};
 `;
 
