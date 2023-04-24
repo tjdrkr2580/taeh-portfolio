@@ -25,12 +25,12 @@ const SecondCert = () => {
       <List
         title="통신선로기능사"
         isStack={false}
-        desc="취급 일자 : 2021.05."
+        desc="취급 일자 : 2022.07."
       />
       <List
         title="네트워크 관리사 2급"
         isStack={false}
-        desc="취급 일자 : 2022.07."
+        desc="취급 일자 : 2021.05."
       />
       <Line />
     </ListWrapper>
