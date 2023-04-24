@@ -16,6 +16,7 @@ export const globalStyle = css`
     cursor: none;
   }
   body {
+    background-color: #191919;
     overflow-x: hidden;
   }
   button {
