@@ -43,14 +43,14 @@ const ScrollText = styled(motion.p)`
   font-size: 4vw;
   font-weight: 600;
   @media (max-width: 650px) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .primary {
     font-size: 4.2vw;
     color: ${(props) => props.theme.strongColor};
     font-weight: 900;
     @media (max-width: 650px) {
-      font-size: 2.8rem;
+      font-size: 3.5rem;
     }
   }
 `;

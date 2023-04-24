@@ -47,3 +47,15 @@ export const firstInfoTextMotion: Variants = Object.freeze({
     },
   },
 });
+
+export const modalVariants: Variants = Object.freeze({
+  initial: { y: 30, opacity: 0 },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+  exit: {
+    y: -30,
+    opacity: 0,
+  },
+});

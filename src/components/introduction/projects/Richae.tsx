@@ -1,4 +1,4 @@
-import { ModalSection, StrongTitle } from "@/styles/mixins";
+import { ModalSection } from "@/styles/mixins";
 import ListUl from "@/components/global/ListUl";
 
 const Richae = () => {
