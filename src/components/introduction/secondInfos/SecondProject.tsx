@@ -46,6 +46,13 @@ const SecondProject = () => {
         project="richae"
       />
       <List
+        title="마크다운 블로그 - 2022.12.26 ~ 31"
+        stack="Next, SCSS, Gray-matter, Next-mdx-remote, Recoil"
+        desc="시험 삼아 개발한 마크다운 블로그"
+        href={true}
+        link={path.mark}
+      />
+      <List
         title="국내상장 이자 - 2022.11 ~ 2023.01"
         stack="React, TypeScript, SCSS, Tailwind, HighCharts"
         desc="실시간 국내 etf 데이터 프로젝트"

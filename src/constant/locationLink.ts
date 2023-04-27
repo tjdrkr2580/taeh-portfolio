@@ -7,4 +7,5 @@ export const path = Object.freeze({
   richae: "https://richae.vercel.app/",
   vikingBand: "https://viking-band-fe.vercel.app/",
   github: "https://github.com/tjdrkr2580",
+  mark: "https://taeh-log.vercel.app/",
 });
