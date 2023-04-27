@@ -93,13 +93,13 @@ const SecondStack = () => {
             src={mongoImg}
             placeholder="empty"
           />
-          <Image
+          {/* <Image
             width={40}
             height={40}
             alt="prisma"
             src={prImg}
             placeholder="empty"
-          />
+          /> */}
           <Image
             width={40}
             height={40}
