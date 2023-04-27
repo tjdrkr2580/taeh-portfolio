@@ -7,7 +7,7 @@ const blog = ({ files }: any) => {
   console.log(files);
   return (
     <>
-      <HeadInfo title="" description="" />
+      <HeadInfo title="Taeh | 블로그" description="김태현 마크다운 블로그" />
       <BlogWrapper>
         <ErrorWrapper>
           현재 마크다운 블로그는 개발 중에 있습니다, 감사합니다
