@@ -51,6 +51,7 @@ const SecondProject = () => {
         desc="시험 삼아 개발한 마크다운 블로그"
         href={true}
         link={path.mark}
+        project="mark"
       />
       <List
         title="국내상장 이자 - 2022.11 ~ 2023.01"
