@@ -1,14 +1,19 @@
+import HeadInfo from "@/components/global/HeadInfo";
 import useGetAllPost from "@/hook/useGetAllPost";
 import { ErrorWrapper } from "@/styles/mixins";
 import styled from "@emotion/styled";
 
-const blog = () => {
+const blog = ({ files }: any) => {
+  console.log(files);
   return (
-    <BlogWrapper>
-      <ErrorWrapper>
-        현재 마크다운 블로그는 개발 중에 있습니다, 감사합니다
-      </ErrorWrapper>
-    </BlogWrapper>
+    <>
+      <HeadInfo title="" description="" />
+      <BlogWrapper>
+        <ErrorWrapper>
+          현재 마크다운 블로그는 개발 중에 있습니다, 감사합니다
+        </ErrorWrapper>
+      </BlogWrapper>
+    </>
   );
 };
 
@@ -22,8 +27,9 @@ export default blog;
 
 export async function getStaticProps() {
   const files = useGetAllPost();
-  console.log(files);
   return {
-    props: {},
+    props: {
+      files,
+    },
   };
 }
