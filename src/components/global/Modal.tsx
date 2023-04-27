@@ -6,13 +6,12 @@ import { useRecoilValue, useResetRecoilState } from "recoil";
 import Navis from "../introduction/projects/Navis";
 import EzarK from "../introduction/projects/EzarK";
 import EzarS from "../introduction/projects/EzarS";
-import Viking from "../introduction/projects/Viking";
-import Taeh from "../introduction/projects/Taeh";
 import Richae from "../introduction/projects/Richae";
 import Air from "../introduction/projects/Air";
 import { modalBackGroundAnimation } from "@/styles/animation/keyframe";
 import { motion } from "framer-motion";
 import { modalVariants } from "@/styles/animation/varients";
+import Mark from "../introduction/projects/Mark";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -33,12 +32,11 @@ const Modal = () => {
         animate="animate"
         exit="exit"
       >
-        {modalState === "taeh" && <Taeh />}
         {modalState === "navis" && <Navis />}
         {modalState === "air" && <Air />}
-        {modalState === "viking" && <Viking />}
         {modalState === "richae" && <Richae />}
         {modalState === "ezars" && <EzarS />}
+        {modalState === "mark" && <Mark />}
         {modalState === "ezark" && <EzarK />}
       </ModalContent>
     </ModalWrapper>
