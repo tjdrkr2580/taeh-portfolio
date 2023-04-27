@@ -12,3 +12,16 @@ export interface listTitlePropsType {
   lists: string[];
   project: string;
 }
+
+export interface fileProps {
+  data: {
+    title: string;
+    date: string;
+    tag: string[];
+  };
+  content: string;
+}
+
+export interface blogProps {
+  files: fileProps[];
+}
