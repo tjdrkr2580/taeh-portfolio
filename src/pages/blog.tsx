@@ -1,3 +1,4 @@
+import useGetAllPost from "@/hook/useGetAllPost";
 import { ErrorWrapper } from "@/styles/mixins";
 import styled from "@emotion/styled";
 
@@ -18,3 +19,11 @@ const BlogWrapper = styled.section`
 `;
 
 export default blog;
+
+export async function getStaticProps() {
+  const files = useGetAllPost();
+  console.log(files);
+  return {
+    props: {},
+  };
+}
