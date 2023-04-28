@@ -4,7 +4,6 @@ import Link from "next/link";
 import Tag from "./Tag";
 
 const Content = ({ file }: blogProp) => {
-  console.log(file);
   return (
     <Link href="/">
       <BlogContent>
