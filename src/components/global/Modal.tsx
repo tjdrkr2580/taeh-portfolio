@@ -12,6 +12,7 @@ import { modalBackGroundAnimation } from "@/styles/animation/keyframe";
 import { motion } from "framer-motion";
 import { modalVariants } from "@/styles/animation/varients";
 import Mark from "../introduction/projects/Mark";
+import Taeh from "../introduction/projects/Taeh";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -38,6 +39,7 @@ const Modal = () => {
         {modalState === "ezars" && <EzarS />}
         {modalState === "mark" && <Mark />}
         {modalState === "ezark" && <EzarK />}
+        {modalState === "taeh" && <Taeh />}
       </ModalContent>
     </ModalWrapper>
   );

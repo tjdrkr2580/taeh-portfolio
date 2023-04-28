@@ -13,6 +13,7 @@ const SecondProject = () => {
         href={true}
         link={path.taeh}
         desc="2023 Taeh 포트폴리오"
+        project="taeh"
       />
       <List
         title="Navis - 2023.03 ~ 2023.04"
