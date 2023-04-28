@@ -15,6 +15,7 @@ const Content = ({ file }: blogProp) => {
             <Tag tag={tag} key={index} />
           ))}
         </TagWrapper>
+        <Contents>{file.content}</Contents>
       </BlogContent>
     </Link>
   );
@@ -36,18 +37,9 @@ const BlogContent = styled.li`
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  p {
-    font-size: 1.2rem;
-    text-overflow: ellipsis;
-    width: 50%;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
   span {
     font-size: 1.5rem;
   }
-
   &:hover {
     transform: scale(1.03);
   }
@@ -57,6 +49,16 @@ const TagWrapper = styled.ul`
   display: flex;
   align-items: center;
   gap: 1.2rem;
+`;
+
+const Contents = styled.p`
+  font-size: 1.5rem;
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 `;
 
 export default Content;
