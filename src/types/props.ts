@@ -25,3 +25,7 @@ export interface fileProps {
 export interface blogProps {
   files: fileProps[];
 }
+
+export interface blogProp {
+  file: fileProps;
+}

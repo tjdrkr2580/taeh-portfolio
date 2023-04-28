@@ -6,6 +6,7 @@ import SecondStack from "./secondInfos/SecondStack";
 import SecondProject from "./secondInfos/SecondProject";
 import SecondStory from "./secondInfos/SecondStory";
 import SecondCert from "./secondInfos/SecondCert";
+import { pageWidthStyle } from "@/styles/mixins";
 
 const SecondInfo = () => {
   return (
@@ -25,11 +26,7 @@ const SecondWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  width: 80%;
-  @media (max-width: 925px) {
-    width: 92.5%;
-  }
-  max-width: 88rem;
+  ${pageWidthStyle};
 `;
 
 export default SecondInfo;

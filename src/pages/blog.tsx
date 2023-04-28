@@ -23,6 +23,12 @@ const blog = ({ files }: blogProps) => {
 };
 
 const BlogWrapper = styled.section`
+  margin: 0 auto;
+  width: 80%;
+  @media (max-width: 925px) {
+    width: 92.5%;
+  }
+  max-width: 88rem;
   min-height: 100vh;
   ${flexCenterCenter};
 `;
@@ -33,12 +39,6 @@ const BlogList = styled.ul`
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-
-  li {
-    width: 100%;
-    height: 4rem;
-    padding: 1rem 0;
-  }
 `;
 
 export default blog;
