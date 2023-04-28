@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-export default function useGetAllPost() {
+export default function getAllPost() {
   const fullPaths = fs.readdirSync(markDownDirList);
   return fullPaths.map((markdown) => {
     const filePath = path.join(markDownDirList, markdown);

@@ -1,6 +1,6 @@
 import Content from "@/components/blog/Content";
 import HeadInfo from "@/components/global/HeadInfo";
-import useGetAllPost from "@/hook/useGetAllPost";
+import getAllPost from "@/hook/getAllPost";
 import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
 import { blogProps, fileProps } from "@/types/props";
 import styled from "@emotion/styled";
@@ -48,7 +48,7 @@ const BlogList = styled.ul`
 export default blog;
 
 export async function getStaticProps() {
-  const files = useGetAllPost();
+  const files = getAllPost();
   return {
     props: {
       files,
