@@ -68,3 +68,9 @@ export const pageWidthStyle = css`
   }
   max-width: 88rem;
 `;
+
+export const Bold = styled.section`
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.6rem;
+`;
