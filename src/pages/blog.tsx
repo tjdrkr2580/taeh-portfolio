@@ -1,6 +1,7 @@
+import Content from "@/components/blog/Content";
 import HeadInfo from "@/components/global/HeadInfo";
 import useGetAllPost from "@/hook/useGetAllPost";
-import { flexCenterCenter } from "@/styles/mixins";
+import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
 import { blogProps, fileProps } from "@/types/props";
 import styled from "@emotion/styled";
 
@@ -11,10 +12,7 @@ const blog = ({ files }: blogProps) => {
       <BlogWrapper>
         <BlogList>
           {files.map((file: fileProps, index: number) => (
-            <li key={index}>
-              <h1>{file.data.title}</h1>
-              <p>{file.data.date}</p>
-            </li>
+            <Content file={file} key={index} />
           ))}
         </BlogList>
       </BlogWrapper>
@@ -23,7 +21,8 @@ const blog = ({ files }: blogProps) => {
 };
 
 const BlogWrapper = styled.section`
-  margin: 0 auto;
+  margin: auto;
+  ${pageMarginStyle}
   width: 80%;
   @media (max-width: 925px) {
     width: 92.5%;
@@ -39,6 +38,11 @@ const BlogList = styled.ul`
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+
+  a {
+    width: 99%;
+    height: 22rem;
+  }
 `;
 
 export default blog;
