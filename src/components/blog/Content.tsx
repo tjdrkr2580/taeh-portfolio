@@ -5,7 +5,7 @@ import Tag from "./Tag";
 
 const Content = ({ file }: blogProp) => {
   return (
-    <Link href="/">
+    <Link href={`blog/${file.data.title}`}>
       <BlogContent>
         <h1>{file.data.title}</h1>
         <span>{file.data.date} 작성</span>
