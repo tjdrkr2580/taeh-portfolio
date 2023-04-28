@@ -14,7 +14,7 @@ const Content = ({ file }: blogProp) => {
             <Tag tag={tag} key={index} />
           ))}
         </TagWrapper>
-        <Contents>{file.content}</Contents>
+        <Contents>{file.data.desc}</Contents>
       </BlogContent>
     </Link>
   );
@@ -28,7 +28,7 @@ const BlogContent = styled.li`
   height: 100%;
   border: 0.15px solid #a6a6a6;
   border-radius: 0.8rem;
-  padding: 2rem 1rem;
+  padding: 2rem 1.4rem;
   transition: 0.25s filter, 0.25s transform;
   h1 {
     font-size: 2.1rem;

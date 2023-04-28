@@ -18,6 +18,7 @@ export interface fileProps {
     title: string;
     date: string;
     tag: string[];
+    desc: string;
   };
   content: string;
 }
