@@ -1,10 +1,9 @@
+import { markDownDirList } from "@/constant/path";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-const markDownDirList = path.join(process.cwd(), "src", "markdown");
-
-export default function useGetAllPost() {
+export default function getAllPost() {
   const fullPaths = fs.readdirSync(markDownDirList);
   return fullPaths.map((markdown) => {
     const filePath = path.join(markDownDirList, markdown);

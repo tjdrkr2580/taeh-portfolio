@@ -18,10 +18,15 @@ export interface fileProps {
     title: string;
     date: string;
     tag: string[];
+    desc: string;
   };
   content: string;
 }
 
 export interface blogProps {
   files: fileProps[];
+}
+
+export interface blogProp {
+  file: fileProps;
 }

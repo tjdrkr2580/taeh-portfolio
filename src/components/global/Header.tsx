@@ -32,6 +32,13 @@ const HeaderWrapper = styled.section`
   h1 {
     ${logoStyle};
   }
+  li {
+    width: fit-content;
+    height: 3rem;
+  }
+  a {
+    padding: 0.4rem 0.8rem;
+  }
 `;
 
 const HeaderLinkList = styled.ul`
