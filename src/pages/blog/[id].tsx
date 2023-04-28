@@ -4,13 +4,16 @@ import { useRouter } from "next/router";
 import React from "react";
 import fs from "fs";
 import { markDownDirList } from "@/constant/path";
+import { ErrorWrapper, pageMarginStyle } from "@/styles/mixins";
 
 const BlogDetail = () => {
   const router = useRouter();
   return (
     <>
       <HeadInfo title="d" />
-      <DetailWrapper></DetailWrapper>
+      <DetailWrapper>
+        <ErrorWrapper>블로그는 현재 개발중입니다</ErrorWrapper>
+      </DetailWrapper>
     </>
   );
 };
@@ -19,6 +22,8 @@ const DetailWrapper = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  ${pageMarginStyle}
+  min-height: 100vh;
 `;
 
 export default BlogDetail;
