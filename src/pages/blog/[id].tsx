@@ -5,15 +5,15 @@ import React from "react";
 import fs from "fs";
 import { markDownDirList } from "@/constant/path";
 import { ErrorWrapper, pageMarginStyle } from "@/styles/mixins";
+import { fileProps, markdownDetailSSGType } from "@/types/props";
+import path from "path";
+import matter from "gray-matter";
 
-const BlogDetail = () => {
-  const router = useRouter();
+const BlogDetail = ({ content, data }: fileProps) => {
   return (
     <>
       <HeadInfo title="d" />
-      <DetailWrapper>
-        <ErrorWrapper>블로그는 현재 개발중입니다</ErrorWrapper>
-      </DetailWrapper>
+      <DetailWrapper>{/* <Title /> */}</DetailWrapper>
     </>
   );
 };
@@ -28,10 +28,17 @@ const DetailWrapper = styled.section`
 
 export default BlogDetail;
 
-export async function getStaticProps(id: any) {
-  console.log(id);
+export async function getStaticProps(param: markdownDetailSSGType) {
+  const { id } = param.params;
+  const detailPath = path.join(markDownDirList, id + ".md");
+  const detailFile = fs.readFileSync(detailPath, "utf-8");
+  const { data, content } = matter(detailFile);
+
   return {
-    props: {},
+    props: {
+      data,
+      content,
+    },
   };
 }
 
