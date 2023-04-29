@@ -30,3 +30,10 @@ export interface blogProps {
 export interface blogProp {
   file: fileProps;
 }
+
+export interface markdownDetailSSGType {
+  params: { id: string };
+  locales: undefined;
+  locale: undefined;
+  defaultLocale: undefined;
+}

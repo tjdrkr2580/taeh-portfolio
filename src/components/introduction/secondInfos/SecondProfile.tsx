@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import React from "react";
 import profile from "/public/profile.jpg";
-import { Bold } from "@/styles/mixins";
 
 const SecondProfile = () => {
   return (
@@ -21,8 +19,9 @@ const SecondProfile = () => {
             디자이너와의 협업, 실시간성, 데이터 시각화 등 다양한 경험들을 가지고
             있으며 또 재사용성을 생각하면서 보기 좋은 코드를 작성하려고 합니다.
             현재는 부트캠프에서 여러 프로젝트를 경험해봄으로써 어떤 조직에서든지
-            본인의 역할을 수행하기 위해 최선을 다하며{" "}
-            <Bold>&quot;좋은&quot;</Bold> 개발자가 되려고 합니다.
+            본인의 역할을 수행하기 위해 최선을 다하며
+            <span className="bold">&quot;좋은&quot;</span>개발자가 되려고
+            합니다.
           </p>
         </SecondDescription>
       </SecondProfileTitle>
@@ -87,6 +86,12 @@ const SecondDescription = styled.div`
   .description {
     font-size: 1.6rem;
     line-height: 1.75;
+  }
+  .bold {
+    font-weight: 700;
+    margin: 0 0.2rem 0 0.1rem;
+    font-size: 1.6rem !important;
+    background: transparent;
   }
 `;
 

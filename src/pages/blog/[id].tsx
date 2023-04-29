@@ -29,6 +29,7 @@ const DetailWrapper = styled.section`
 export default BlogDetail;
 
 export async function getStaticProps(id: any) {
+  console.log(id);
   return {
     props: {},
   };
@@ -40,7 +41,6 @@ export async function getStaticPaths(id: string) {
     const id = fileName.split(".")[0];
     return { params: { id } };
   });
-  console.log(paths);
   return {
     paths,
     fallback: true,
