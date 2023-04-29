@@ -2,19 +2,20 @@ import { blogProp } from "@/types/props";
 import styled from "@emotion/styled";
 import Link from "next/link";
 import Tag from "./Tag";
+import { TagWrapper } from "@/styles/mixins";
 
 const Content = ({ file }: blogProp) => {
   return (
-    <Link href={`blog/${file.data.title}`}>
+    <Link href={`blog/${file?.data?.title}`}>
       <BlogContent>
-        <h1>{file.data.title}</h1>
-        <span>{file.data.date} 작성</span>
+        <h1>{file?.data?.title}</h1>
+        <span>{file?.data?.date} 작성</span>
         <TagWrapper>
-          {file.data.tag.map((tag, index) => (
+          {file?.data?.tag?.map((tag, index) => (
             <Tag tag={tag} key={index} />
           ))}
         </TagWrapper>
-        <Contents>{file.data.desc}</Contents>
+        <Contents>{file?.data?.desc}</Contents>
       </BlogContent>
     </Link>
   );
@@ -42,12 +43,6 @@ const BlogContent = styled.li`
   &:hover {
     transform: scale(1.03);
   }
-`;
-
-const TagWrapper = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
 `;
 
 const Contents = styled.p`

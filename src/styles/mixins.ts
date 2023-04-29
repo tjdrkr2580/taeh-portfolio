@@ -61,6 +61,12 @@ export const ModalSection = styled.section`
   padding-left: 2rem;
 `;
 
+export const TagWrapper = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+`;
+
 export const pageWidthStyle = css`
   width: 80%;
   @media (max-width: 925px) {
