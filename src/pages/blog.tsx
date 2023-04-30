@@ -4,6 +4,7 @@ import getAllPost from "@/hook/getAllPost";
 import { flexCenterCenter, pageMarginStyle } from "@/styles/mixins";
 import { blogProps, fileProps } from "@/types/props";
 import styled from "@emotion/styled";
+import { GetStaticProps } from "next";
 
 const blog = ({ files }: blogProps) => {
   return (
@@ -47,11 +48,11 @@ const BlogList = styled.ul`
 
 export default blog;
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const files = getAllPost();
   return {
     props: {
       files,
     },
   };
-}
+};

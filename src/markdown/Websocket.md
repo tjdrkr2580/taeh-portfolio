@@ -100,14 +100,13 @@ Sec-WebSocket-Version
 
 ```
 -   클라이언트에서 서버로 보내는 요청:
-
     -   GET 메서드로 요청을 보내며, HTTP 버전은 1.1을 사용합니다.
     -   Upgrade 헤더에 "websocket" 값을 포함시킵니다.
     -   Connection 헤더에 "Upgrade" 값을 포함시킵니다.
     -   Sec-WebSocket-Key 헤더에 랜덤한 문자열 값을 포함시킵니다.
     -   Sec-WebSocket-Version 헤더에 사용하는 웹소켓 버전을 포함시킵니다.
--   서버에서 클라이언트로 보내는 응답:
 
+-   서버에서 클라이언트로 보내는 응답:
     -   HTTP 버전은 1.1을 사용합니다.
     -   Upgrade 헤더에 "websocket" 값을 포함시킵니다.
     -   Connection 헤더에 "Upgrade" 값을 포함시킵니다.
