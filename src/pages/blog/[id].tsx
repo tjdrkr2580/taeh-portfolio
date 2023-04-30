@@ -35,7 +35,7 @@ const BlogDetail = ({ data, content }: fileDetailProps) => {
                   PreTag="div"
                   {...props}
                   style={a11yDark}
-                />
+                ></Syntax>
               ) : (
                 <code className={className} {...props}>
                   {children}
