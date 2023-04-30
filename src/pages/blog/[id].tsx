@@ -7,12 +7,13 @@ import { fileDetailProps, markdownDetailSSGType } from "@/types/props";
 import path from "path";
 import matter from "gray-matter";
 import Title from "./Title";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { markdownStyle } from "@/styles/markdown";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { SyntaxProps } from "@/types/public";
 
 const BlogDetail = ({ data, content }: fileDetailProps) => {
   return (
@@ -33,6 +34,7 @@ const BlogDetail = ({ data, content }: fileDetailProps) => {
                   language={match[1]}
                   PreTag="div"
                   {...props}
+                  style={a11yDark}
                 />
               ) : (
                 <code className={className} {...props}>
@@ -77,7 +79,7 @@ export async function getStaticProps(param: markdownDetailSSGType) {
   };
 }
 
-const Syntax = styled(SyntaxHighlighter)`
+const Syntax = styled(SyntaxHighlighter)<SyntaxProps>`
   background-color: ${(props) => props.theme.codeColor} !important;
   font-weight: 500;
   color: ${(props) => props.theme.textColor} !important;
