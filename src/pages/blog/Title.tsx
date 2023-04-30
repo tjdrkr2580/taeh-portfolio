@@ -10,8 +10,8 @@ const Title = ({ data }: fileData) => {
       <h1>{data?.title}</h1>
       <span>{data?.date}</span>
       <TagWrapper>
-        {data?.tag?.map((tag) => (
-          <Tag tag={tag} />
+        {data?.tag?.map((tag, index) => (
+          <Tag tag={tag} key={index} />
         ))}
       </TagWrapper>
     </TitleWrapper>
