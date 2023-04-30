@@ -43,7 +43,7 @@ const BlogDetail = ({ data, content }: fileDetailProps) => {
               );
             },
           }}
-        />
+        ></ReactMarkdownWrapper>
       </DetailWrapper>
     </>
   );
