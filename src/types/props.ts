@@ -13,13 +13,16 @@ export interface listTitlePropsType {
   project: string;
 }
 
-export interface fileProps {
+export interface fileData {
   data: {
     title: string;
     date: string;
     tag: string[];
     desc: string;
   };
+}
+
+export interface fileProps extends fileData {
   content: string;
 }
 
@@ -29,4 +32,15 @@ export interface blogProps {
 
 export interface blogProp {
   file: fileProps;
+}
+
+export interface markdownDetailSSGType {
+  params: { id: string };
+  locales: undefined;
+  locale: undefined;
+  defaultLocale: undefined;
+}
+
+export interface fileDetailProps extends fileProps {
+  contentHtml: string;
 }
