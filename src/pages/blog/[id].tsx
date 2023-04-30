@@ -99,7 +99,7 @@ const DetailMarkdownComponent = styled.div`
 
   pre {
     width: 100%;
-    padding: 2rem;
+    padding: 1.2rem;
     border-radius: 0.4rem;
     background: ${(props) => props.theme.codeColor};
 

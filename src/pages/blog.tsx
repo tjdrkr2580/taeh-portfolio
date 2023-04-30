@@ -41,7 +41,7 @@ const BlogList = styled.ul`
 
   a {
     width: 99%;
-    height: 22rem;
+    height: 18rem;
   }
 `;
 
