@@ -1,28 +1,46 @@
 import HeadInfo from "@/components/global/HeadInfo";
 import styled from "@emotion/styled";
-import React from "react";
 import fs from "fs";
 import { markDownDirList } from "@/constant/path";
-import {
-  flexCenterCenter,
-  pageMarginStyle,
-  pageWidthStyle,
-} from "@/styles/mixins";
+import { pageMarginStyle, pageWidthStyle } from "@/styles/mixins";
 import { fileDetailProps, markdownDetailSSGType } from "@/types/props";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkHtml from "remark-html";
 import Title from "./Title";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { markdownStyle } from "@/styles/markdown";
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const BlogDetail = ({ data, contentHtml }: fileDetailProps) => {
+const BlogDetail = ({ data, content }: fileDetailProps) => {
   return (
     <>
       <HeadInfo title={`Taeh | ${data?.title}`} />
       <DetailWrapper>
         <Title data={data} />
-        <DetailMarkdownComponent
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        <ReactMarkdownWrapper
+          children={content}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          components={{
+            code({ inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || "");
+              return !inline && match ? (
+                <Syntax
+                  children={String(children).replace(/\n$/, "")}
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                />
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
         />
       </DetailWrapper>
     </>
@@ -31,7 +49,6 @@ const BlogDetail = ({ data, contentHtml }: fileDetailProps) => {
 
 const DetailWrapper = styled.section`
   display: flex;
-  align-items: center;
   min-height: 90vh;
   margin: 0 auto;
   flex-direction: column;
@@ -39,76 +56,10 @@ const DetailWrapper = styled.section`
   ${pageWidthStyle}
 `;
 
-const DetailMarkdownComponent = styled.div`
-  width: 100%;
+const ReactMarkdownWrapper = styled(ReactMarkdown)`
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-
-  ol {
-    li {
-      list-style: decimal;
-    }
-  }
-
-  li {
-    margin: 1rem 0 1rem 1rem;
-    list-style: disc;
-    font-size: 1.5rem;
-  }
-
-  img {
-    width: fit-content;
-    object-fit: cover;
-  }
-
-  p {
-    line-height: 1.5;
-    font-size: 1.4rem;
-  }
-
-  h1 {
-    font-size: 2.7rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-  }
-
-  h3 {
-    font-size: 2.1rem;
-  }
-
-  h4 {
-    font-size: 1.8rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    padding: 1rem 0;
-    border-bottom: 0.2rem solid ${(props) => props.theme.primaryColor};
-  }
-
-  blockquote {
-    padding: 0 1em;
-    color: ${(props) => props.theme.primaryColor};
-    border-left: 0.25rem solid ${(props) => props.theme.primaryColor};
-  }
-
-  pre {
-    width: 100%;
-    padding: 1.2rem;
-    border-radius: 0.4rem;
-    background: ${(props) => props.theme.codeColor};
-
-    code {
-      width: 100%;
-      font-size: 1.6rem;
-      width: fit-content;
-    }
-  }
+  ${markdownStyle};
 `;
 
 export default BlogDetail;
@@ -118,16 +69,28 @@ export async function getStaticProps(param: markdownDetailSSGType) {
   const detailPath = path.join(markDownDirList, id + ".md");
   const detailFile = fs.readFileSync(detailPath, "utf-8");
   const { data, content } = matter(detailFile);
-  const processedContent = await remark().use(remarkHtml).process(content);
-  const contentHtml = processedContent.toString();
-
   return {
     props: {
       data,
-      contentHtml,
+      content,
     },
   };
 }
+
+const Syntax = styled(SyntaxHighlighter)`
+  background-color: ${(props) => props.theme.codeColor} !important;
+  font-weight: 500;
+  color: ${(props) => props.theme.textColor} !important;
+  code {
+    font-size: 1.6rem;
+  }
+  span {
+    letter-spacing: 0.05rem;
+    line-height: 1.3;
+    font-size: 1.6rem !important;
+    font-weight: 500;
+  }
+`;
 
 export async function getStaticPaths(id: string) {
   const fileNames = fs.readdirSync(markDownDirList);

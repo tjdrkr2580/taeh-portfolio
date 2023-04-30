@@ -6,7 +6,9 @@ import { logoStyle } from "@/styles/mixins";
 const Header = () => {
   return (
     <HeaderWrapper>
-      <h1>Taeh</h1>
+       <Link href={`/`}>
+       <h1>Taeh</h1>
+       </Link>
       <HeaderLinkList>
         <li>
           <Link href={`/`}>소개</Link>
