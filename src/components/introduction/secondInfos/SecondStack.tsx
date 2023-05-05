@@ -110,6 +110,13 @@ const SecondStack = () => {
         </StackImages>
         <p>경험한 적이 있는 기술 스택입니다.</p>
       </StackWrapper>
+      <StackWrapper>
+        <ListTitle
+          title="도구"
+          stack="Zeplin, Figma, Notion, Slack, Bitbucket, Jira"
+        />
+        <p>사용하는 실무, 개발 도구입니다.</p>
+      </StackWrapper>
     </ListWrapper>
   );
 };
