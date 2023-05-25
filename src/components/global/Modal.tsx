@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { modalVariants } from "@/styles/animation/varients";
 import Mark from "../introduction/projects/Mark";
 import Taeh from "../introduction/projects/Taeh";
+import Blog from "../introduction/projects/Blog";
 
 const Modal = () => {
   const resetModal = useResetRecoilState(isModalState);
@@ -40,6 +41,7 @@ const Modal = () => {
         {modalState === "mark" && <Mark />}
         {modalState === "ezark" && <EzarK />}
         {modalState === "taeh" && <Taeh />}
+        {modalState === "blog" && <Blog />}
       </ModalContent>
     </ModalWrapper>
   );

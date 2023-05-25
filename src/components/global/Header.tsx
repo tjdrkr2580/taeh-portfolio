@@ -9,6 +9,7 @@ const Header = () => {
       <Link href={`/`}>
         <h1>Taeh</h1>
       </Link>
+      <Link href="https://taeh-blog.kro.kr">블로그 바로가기</Link>
     </HeaderWrapper>
   );
 };
@@ -31,18 +32,8 @@ const HeaderWrapper = styled.section`
     height: 3rem;
   }
   a {
-    padding: 0.4rem 0.8rem;
-  }
-`;
-
-const HeaderLinkList = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  li {
-    a {
-      font-size: 1.45rem;
-    }
+    font-weight: 500;
+    font-size: 1.55rem;
   }
 `;
 

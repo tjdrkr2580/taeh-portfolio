@@ -8,4 +8,5 @@ export const path = Object.freeze({
   vikingBand: "https://viking-band-fe.vercel.app/",
   github: "https://github.com/tjdrkr2580",
   mark: "https://taeh-log.vercel.app/",
+  blog: "https://taeh-blog.kro.kr",
 });

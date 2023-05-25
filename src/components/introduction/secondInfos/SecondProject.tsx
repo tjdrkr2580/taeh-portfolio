@@ -8,6 +8,14 @@ const SecondProject = () => {
       <Line />
       <StrongTitle>프로젝트</StrongTitle>
       <List
+        title="Taeh Blog - 2023.05.24 ~"
+        stack="Next, Nest, MySQL, Prisma, TypeScript, Sass"
+        href={true}
+        link={path.blog}
+        desc="풀스택 마크다운 블로그 프로젝트"
+        project="blog"
+      />
+      <List
         title="Taeh - 2023.04.21 ~ 23"
         stack="Next, TypeScript, Emotion, Framer-motion"
         href={true}
